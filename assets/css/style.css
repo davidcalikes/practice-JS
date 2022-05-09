@@ -4,6 +4,9 @@
     border: none;
 }
 
+body {
+    background: linear-gradient(to bottom, #ffffff, #80c7f0, #ffffff);
+}
 
 .menu-window {
     width: 50vw;
