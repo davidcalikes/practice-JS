@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Schoolbell&family=Short+Stack&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +12,12 @@ body {
 
 .menu-window {
     width: 50vw;
-    border: 1px solid blue;
     text-align: center;
 }
 
 .menu-window ul {
     list-style: none;
+    margin: 40px;
 }
 
 .page-center{
@@ -26,26 +28,31 @@ body {
     width: 100%;
 }
 .menu-button {
-    color: turquoise;
     padding: 10px;
     border-radius: 10px;
     margin: 1% 20%;
-    width: 55%;
-    font-family: inherit;
+    width: 65%;
+    font-family: Schoolbell, sans-serif;
+    font-size: xx-large;
+
 }
 
 #animals-button {
     background: rgb(219, 24, 70);
+    color: #ffffff;
 }
 
 #shapes-button {
     background: rgb(237, 136, 13);
+    color: oldlace;
 }
 
 #colors-button {
     background: rgb(3, 7, 104);
+    color: antiquewhite;
 }
 
 #about-button {
     background: green;
+    color: azure;
 }
