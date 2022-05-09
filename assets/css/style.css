@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
 .menu-window {
     width: 50vw;
     border: 1px solid blue;
@@ -14,4 +21,12 @@
 
 .header-logo {
     width: 100%;
+}
+.menu-button {
+    color: turquoise;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1% 20%;
+    width: 55%;
+    font-family: inherit;
 }
