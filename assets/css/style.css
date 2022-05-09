@@ -1,0 +1,9 @@
+.menu-window{
+    width: 50vw;
+    border: 1px solid blue;
+    margin-top: 10px;
+}
+
+.page-center{
+    margin: 0 auto;
+}
