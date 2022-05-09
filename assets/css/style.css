@@ -33,3 +33,19 @@ body {
     width: 55%;
     font-family: inherit;
 }
+
+#animals-button {
+    background: rgb(219, 24, 70);
+}
+
+#shapes-button {
+    background: rgb(237, 136, 13);
+}
+
+#colors-button {
+    background: rgb(3, 7, 104);
+}
+
+#about-button {
+    background: green;
+}
