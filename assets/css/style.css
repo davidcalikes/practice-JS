@@ -6,7 +6,7 @@
     border: none;
 }
 
-button:hover{ background: rgba(234, 237, 234, 0.7);
+button:hover{ border: 3px solid yellow;
 }
 
 body {
@@ -48,6 +48,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 100%;
+    border: 3px solid whitesmoke;
     font-family: Schoolbell, sans-serif;
     font-size: 1.7rem;
     margin: 1%;
