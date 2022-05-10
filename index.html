@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvelous Matching</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        var pop = new Audio();
+        pop.src = "assets/audio/pop.mp3";
+    </script>
+
 </head>
+
 <body>
 
     <header>
@@ -18,10 +24,10 @@
     <nav>
         <div class="menu-window page-center">
             <UL>
-                <li> <button id="animals-button" class="menu-button">Animals</button> </li>
-                <li> <button id="shapes-button" class="menu-button">Shapes</button> </li>
-                <li> <button id="colors-button" class="menu-button">Colors</button> </li>
-                <li> <button id="about-button" class="menu-button">About</button> </li>
+                <li> <a href="#" onclick="pop.play()"><button id="animals-button" class="menu-button">Animals</button></a></li>
+                <li> <a href="#" onclick="pop.play()"><button id="shapes-button" class="menu-button">Shapes</button> </a></li>
+                <li> <a href="#" onclick="pop.play()"><button id="colors-button" class="menu-button">Colors</button></a> </li>
+                <li> <a href="#" onclick="pop.play()"><button id="about-button" class="menu-button">About</button> </a></li>
             </UL>
         </div>
 
