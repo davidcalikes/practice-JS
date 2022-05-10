@@ -10,6 +10,19 @@ body {
     background: linear-gradient(to bottom, #ffffff, #80c7f0, #ffffff);
 }
 
+.title-window {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.logo-box{
+    width: 75%;
+    height: 250px;
+}
+
 .menu-window {
     width: 50vw;
     text-align: center;
@@ -25,7 +38,7 @@ body {
 }
 
 .header-logo {
-    width: 100%;
+    width: 100%;  
 }
 .menu-button {
     padding: 10px;
