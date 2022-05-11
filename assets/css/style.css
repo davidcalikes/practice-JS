@@ -7,6 +7,13 @@
 }
 h1 {
     text-align: center;
+    font-size: 300%;
+    color: rgb(247, 0, 255);
+    font-family: Schoolbell, sans-serif;
+}
+
+#menu-link {
+    text-decoration: none;
 }
 
 button:hover{ border: 3px solid yellow;
@@ -49,6 +56,11 @@ i {
 .header-logo {
     width: 90%;  
     max-width: 600px;
+}
+
+.game-logo {
+    width: 75%;  
+    max-width: 450px;
 }
 .menu-button {
     padding: 30px;
