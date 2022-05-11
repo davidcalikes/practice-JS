@@ -100,6 +100,31 @@ i {
     padding-top: 10px;
     margin-top: 2rem;
 }
+
+.container {
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.half-box {
+    width: 50%;
+    text-align: center;
+}
+
+#box1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width: 510px) {
 
     .menu-button {
