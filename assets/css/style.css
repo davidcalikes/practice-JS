@@ -21,7 +21,10 @@ body {
     padding-top: 10px;
 }
 
-
+i {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
 .menu-window {
     align-items: center;
@@ -73,4 +76,12 @@ body {
 #about-button {
     background: green;
     color: azure;
+}
+.footer-window {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 2rem;
 }
