@@ -5,6 +5,9 @@
     padding: 0;
     border: none;
 }
+h1 {
+    text-align: center;
+}
 
 button:hover{ border: 3px solid yellow;
 }
@@ -85,3 +88,27 @@ i {
     padding-top: 10px;
     margin-top: 2rem;
 }
+@media screen and (max-width: 510px) {
+
+    .menu-button {
+        font-size: 1.4rem;
+    }
+
+    i {
+        margin-left: 3%;
+        margin-right: 3%;
+        }
+    }
+
+    @media screen and (max-width: 350px) {
+
+        .menu-button {
+            font-size: 1.2rem;
+        }
+    
+        i {
+            margin-left: 1%;
+            margin-right: 1%;
+            }
+        }
+

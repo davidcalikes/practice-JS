@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvelous Matching</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/b13bafb209.js" crossorigin="anonymous"></script>
+    <script>
+        var pop = new Audio();
+        pop.src = "assets/audio/pop.mp3";
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="title-window">
+            <img class="header-logo" src="assets/images/mm-header.png" alt="A cartoon logo featuring stylised text that says marvelous matching and is surrounded by cartoon animals and colorful shapes">  
+        </div>
+    </header>
+    
+    <nav>
+        <div class="menu-window">
+            <UL>
+                <li> <a href="#" onclick="pop.play()"><button id="animals-button" class="menu-button"><i class="fa-solid fa-circle-play"></i> Animals <i class="fa-solid fa-paw"></i></button></a></li>
+                <li> <a href="#" onclick="pop.play()"><button id="shapes-button" class="menu-button"><i class="fa-solid fa-circle-play"></i></i> Shapes <i class="fa-solid fa-shapes"></i></button> </a></li>
+                <li> <a href="#" onclick="pop.play()"><button id="colors-button" class="menu-button"><i class="fa-solid fa-circle-play"></i> Colors <i class="fa-solid fa-rainbow"></i></button></a> </li>
+                <li> <a href="#" onclick="pop.play()"><button id="about-button" class="menu-button"><i class="fa-solid fa-circle-play"></i> About <i class="fa-solid fa-circle-info"></i></button> </a></li>
+            </UL>
+        </div>
+
+    </nav>
+
+    <footer>
+        <div class="footer-window">
+            <p id="footer-info">&#169; 2022 David Calikes</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
