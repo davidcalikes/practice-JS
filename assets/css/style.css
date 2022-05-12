@@ -117,6 +117,8 @@ i {
 .half-box {
     width: 50%;
     text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #box1 {
@@ -138,6 +140,12 @@ i {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.box{
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    filter: drop-shadow(15px 15px 8px #333333b8);
 }
 
 @media screen and (max-width: 510px) {
