@@ -19,7 +19,7 @@ h1 {
 button:hover{ border: 5px solid yellow;
 }
 
-.box div:hover{ border: 5px solid yellow;
+.box:hover{ border: 5px solid yellow;
 }
 
 body {
@@ -107,6 +107,7 @@ i {
 .container {
     display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .row {
@@ -148,18 +149,17 @@ i {
 }
 
 #question-container {
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 15rem;
+    display: flex;
+    margin-top: 1rem;
 }
 
 .question-button {
     
     background: orangered;
     color: white;
-    padding: 30px;
+    padding: 20px;
+    width: 20rem;
     border-radius: 10px;
-    width: 100%;
     border: 5px solid white;
     font-family: Schoolbell, sans-serif;
     font-size: 1.9rem;
@@ -167,15 +167,14 @@ i {
     filter: drop-shadow(15px 15px 8px #333333b8);
 }
 
-#thumb-container{
-        
-    width: 50%;
-        margin-top: 5%;
-    }
 
 .q-thumb{
-    width: 25%; 
-    margin-left: 5rem;  
+    width: 6rem; 
+    
+    border-radius: 10px;
+    border: 5px solid whitesmoke;
+    margin: 1rem;
+    filter: drop-shadow(15px 15px 8px #333333b8); 
 }
 
 @media screen and (max-width: 510px) {
