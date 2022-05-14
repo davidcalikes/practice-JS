@@ -114,33 +114,15 @@ i {
     justify-content: center;
 }
 
-.half-box {
-    width: 50%;
-    text-align: center;
+#box1 {
+    width: 1000%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-#box1 {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
-#box2 {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
-#box3 {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
-#box4 {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-}
 
 .box{
     border-radius: 10px;
