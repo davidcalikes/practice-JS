@@ -34,7 +34,7 @@ body {
     padding-top: 10px;
 }
 
-i {
+button i {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -104,6 +104,20 @@ i {
     margin-top: 2rem;
 }
 
+.back-link {
+    text-decoration: none;
+    font-size: 80%;
+}
+
+.back-link i{
+    font-size: 80%;
+    margin: 5px;
+}
+
+.back-link h1:hover{
+    color: yellow;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -130,14 +144,23 @@ i {
 
 }
 
-#box1 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 1%;
-    margin-bottom: 5%;
+#box-1 {
+    background: url('../images/cat.png') no-repeat center center;  
+    background-size: 100%; 
 }
+#box-2 {
+    background: url('../images/cow.png') no-repeat center center; 
+    background-size: 100%;  
+}
+#box-3 {
+    background: url('../images/pig.png') no-repeat center center;
+    background-size: 100%;
+}
+#box-4 {
+    background: url('../images/duck.png') no-repeat center center;
+    background-size: 100%;   
+}
+
 
 .box{
     border-radius: 10px;
@@ -187,7 +210,47 @@ i {
         margin-left: 3%;
         margin-right: 3%;
         }
-    }
+
+        #box-1 {
+            width: 150px; 
+            height: 150px;    
+        }
+        #box-2 {
+            width: 150px; 
+            height: 150px;   
+        }
+        #box-3 {
+            width: 150px; 
+            height: 150px; 
+        }
+        #box-4 {
+            width: 150px; 
+            height: 150px;  
+        }
+
+        .question-button {
+            width: 15rem;
+        }
+
+    @media screen and (max-width: 400px) {
+        
+        #box-1 {
+            width: 100px; 
+            height: 100px;   
+        }
+        #box-2 {
+            width: 100px; 
+            height: 100px;  
+        }
+        #box-3 {
+            width: 100px; 
+            height: 100px; 
+        }
+        #box-4 {
+            width: 100px; 
+            height: 100px;  
+        }
+
 
     @media screen and (max-width: 350px) {
 
@@ -200,3 +263,17 @@ i {
             margin-right: 1%;
             }
         }
+
+        #question-container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .question-button {
+            order: 2;
+        }
+
+
+    
+    }       
+}
