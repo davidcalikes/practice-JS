@@ -5,6 +5,11 @@
     padding: 0;
     border: none;
 }
+
+footer i {
+    color: black;
+}
+
 h1 {
     text-align: center;
     font-size: 300%;
