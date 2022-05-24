@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvelous Matching</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="script" href="assets/script/script.js">
+    <script src="myscript.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/b13bafb209.js" crossorigin="anonymous"></script>
 
 </head>
@@ -24,10 +24,18 @@
     <nav>
         <div class="menu-window">
             <UL>
-                <li> <a href="animals.html" onclick="pop.play()"><button id="animals-button" class="menu-button"><i class="fa-solid fa-circle-play"></i> Animals <i class="fa-solid fa-paw"></i></button></a></li>
-                <li> <a href="#" onclick="pop.play()"><button id="shapes-button" class="menu-button"><i class="fa-solid fa-circle-play"></i></i> Shapes <i class="fa-solid fa-shapes"></i></button> </a></li>
-                <li> <a href="#" onclick="pop.play()"><button id="colors-button" class="menu-button"><i class="fa-solid fa-circle-play"></i> Colors <i class="fa-solid fa-rainbow"></i></button></a> </li>
-                <li> <a href="#" onclick="pop.play()"><button id="about-button" class="menu-button"><i class="fa-solid fa-circle-play"></i> About <i class="fa-solid fa-circle-info"></i></button> </a></li>
+                <li> <a href="animals.html">
+                    <audio id="Sound" src="assets/audio/pop.mp3"></audio>
+                    <button id="animals-button" class="menu-button" onclick="playBeep()"><i class="fa-solid fa-circle-play"></i> Animals <i class="fa-solid fa-paw"></i></button></a></li>
+                <li> <a href="#">
+                    <audio id="Sound" src="assets/audio/pop.mp3"></audio>
+                    <button id="shapes-button" class="menu-button" onclick="playBeep()"><i class="fa-solid fa-circle-play"></i></i> Shapes <i class="fa-solid fa-shapes"></i></button> </a></li>
+                <li> <a href="#">
+                    <audio id="Sound" src="assets/audio/pop.mp3"></audio>
+                    <button id="colors-button" class="menu-button" onclick="playBeep()"><i class="fa-solid fa-circle-play"></i> Colors <i class="fa-solid fa-rainbow"></i></button></a> </li>
+                <li> <a href="#">
+                    <audio id="Sound" src="assets/audio/pop.mp3"></audio>
+                    <button id="about-button" class="menu-button" onclick="playBeep()"><i class="fa-solid fa-circle-play"></i> About <i class="fa-solid fa-circle-info"></i></button> </a></li>
             </UL>
         </div>
 
