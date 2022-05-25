@@ -61,9 +61,26 @@ function shuffle(array) {
      document.getElementById("box-3").src = animals[2];
      document.getElementById("box-4").src = animals[3];
 
+     let quizList = animals.slice(0,4);
+
+     document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
 
 
+function runGame() {
 
+}
+
+function turnCounter() {
+
+}
+
+function endGame() {
+
+}
+
+function displayQuestion() {
+
+}
 
 
      
