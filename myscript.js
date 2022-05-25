@@ -1,11 +1,36 @@
-// Plays pop sound when button is clicked.
-function playPop() {
+// Plays button sound when button is clicked and loads relevant game page.
+function playAnimal() {
   var sound = document.getElementById("sound");
   sound.play();
   sound.addEventListener('ended', function () {
     location.href = 'animals.html';
   });
 }
+
+function playShapes() {
+  var sound = document.getElementById("sound");
+  sound.play();
+  sound.addEventListener('ended', function () {
+    location.href = 'shapes.html';
+  });
+}
+
+function playColours() {
+  var sound = document.getElementById("sound");
+  sound.play();
+  sound.addEventListener('ended', function () {
+    location.href = 'colours.html';
+  });
+}
+
+function playAbout() {
+  var sound = document.getElementById("sound");
+  sound.play();
+  sound.addEventListener('ended', function () {
+    location.href = 'about.html';
+  });
+}
+
 
 /**
  * Returns random elements from array using Fisher-Yates Shuffle Algorithm. 
