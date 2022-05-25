@@ -1,6 +1,6 @@
 // Plays button sound when button is clicked and loads relevant game page.
-function playAnimal() {
-  var sound = document.getElementById("sound");
+function playAnimals() {
+  let sound = document.getElementById("animals");
   sound.play();
   sound.addEventListener('ended', function () {
     location.href = 'animals.html';
@@ -8,7 +8,7 @@ function playAnimal() {
 }
 
 function playShapes() {
-  var sound = document.getElementById("sound");
+  let sound = document.getElementById("shapes");
   sound.play();
   sound.addEventListener('ended', function () {
     location.href = 'shapes.html';
@@ -16,7 +16,7 @@ function playShapes() {
 }
 
 function playColours() {
-  var sound = document.getElementById("sound");
+  let sound = document.getElementById("colours");
   sound.play();
   sound.addEventListener('ended', function () {
     location.href = 'colours.html';
@@ -24,7 +24,7 @@ function playColours() {
 }
 
 function playAbout() {
-  var sound = document.getElementById("sound");
+  let sound = document.getElementById("about");
   sound.play();
   sound.addEventListener('ended', function () {
     location.href = 'about.html';
