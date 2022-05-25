@@ -1,3 +1,9 @@
+// Plays pop sound when button is clicked.
+function playPop() {
+  var sound = document.getElementById("sound")
+  sound.play()
+}
+
 /**
  * Returns random elements from array using Fisher-Yates Shuffle Algorithm. 
  * (Credit: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
@@ -17,8 +23,7 @@ function shuffle(array) {
      return array;
    }
    
-   // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders
-
+   // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders.
    let animals = ["assets/images/cat.png","assets/images/dog.png","assets/images/pig.png","assets/images/horse.png","assets/images/sheep.png","assets/images/cow.png","assets/images/duck.png","assets/images/rooster.png"];
    shuffle(animals);
    console.log(animals);
