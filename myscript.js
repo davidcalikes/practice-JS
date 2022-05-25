@@ -1,7 +1,10 @@
 // Plays pop sound when button is clicked.
 function playPop() {
-  var sound = document.getElementById("sound")
-  sound.play()
+  var sound = document.getElementById("sound");
+  sound.play();
+  sound.addEventListener('ended', function () {
+    location.href = 'animals.html';
+  });
 }
 
 /**
