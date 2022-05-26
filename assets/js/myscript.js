@@ -54,7 +54,6 @@ function shuffle(array) {
    // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders.
    let animals = ["assets/images/cat.png","assets/images/dog.png","assets/images/pig.png","assets/images/horse.png","assets/images/sheep.png","assets/images/cow.png","assets/images/duck.png","assets/images/rooster.png"];
    shuffle(animals);
-   console.log(animals);
 
      document.getElementById("box-1").src = animals[0];
      document.getElementById("box-2").src = animals[1];
@@ -65,6 +64,62 @@ function shuffle(array) {
 
      document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
 
+    let quizPic = document.getElementById("q-thumb").getAttribute('src');
+     
+    console.log(quizPic);
+     
+     let question = document.getElementById("question-button").innerHTML;
+
+     
+      
+         if (quizPic === "assets/images/sheep.png") {
+           document.getElementById("question-button").innerHTML = "Where is the sheep?";
+         
+          } else {
+
+         if (quizPic === "assets/images/duck.png") {
+          document.getElementById("question-button").innerHTML = "Where is the duck?";
+         
+        } else {
+
+          if (quizPic === "assets/images/horse.png") {
+           document.getElementById("question-button").innerHTML = "Where is the horse?";
+        
+          } else {
+
+            if (quizPic === "assets/images/pig.png") {
+             document.getElementById("question-button").innerHTML = "Where is the pig?";
+
+          } else {
+
+              if (quizPic === "assets/images/rooster.png") {
+               document.getElementById("question-button").innerHTML = "Where is the rooster?";
+
+          } else {
+
+                if (quizPic === "assets/images/cat.png") {
+                 document.getElementById("question-button").innerHTML = "Where is the cat?";     
+          
+                } else {
+
+                  if (quizPic === "assets/images/dog.png") {
+                   document.getElementById("question-button").innerHTML = "Where is the dog?";
+              
+                
+                  } else {
+
+                    if (quizPic === "assets/images/cow.png") {
+                     document.getElementById("question-button").innerHTML = "Where is the cow?";
+                
+                    }
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
 
 function runGame() {
 

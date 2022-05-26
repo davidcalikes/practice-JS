@@ -185,7 +185,6 @@ text-align: center;
     background-size: 100%;   
 }
 
-
 .box{
     border-radius: 10px;
     border: 5px solid whitesmoke;
@@ -200,7 +199,7 @@ text-align: center;
     margin-top: 1rem;
 }
 
-.question-button {
+#question-button {
     
     background: orangered;
     color: white;
@@ -217,7 +216,6 @@ text-align: center;
 
 #q-thumb{
     width: 6rem; 
-    
     border-radius: 10px;
     border: 5px solid whitesmoke;
     margin: 1rem;
@@ -252,7 +250,7 @@ text-align: center;
             height: 150px;  
         }
 
-        .question-button {
+        #question-button {
             width: 15rem;
         }
 
