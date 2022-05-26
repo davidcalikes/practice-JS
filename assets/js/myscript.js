@@ -119,18 +119,54 @@ function shuffle(array) {
           }
         }
 
+// Creates matching pair of flash cards and waits for user interaction.       
 function runGame() {
       
   let box1 = document.getElementById("box-1").getAttribute('src');
-  console.log(box1)
+  let box2 = document.getElementById("box-2").getAttribute('src');
+  let box3 = document.getElementById("box-3").getAttribute('src');
+  let box4 = document.getElementById("box-4").getAttribute('src');
+  
   let answerBox = document.getElementById("q-thumb").getAttribute('src');
   console.log(answerBox)
      
   if (box1 === answerBox) {
-      console.log("winner");
+      let active = document.getElementById("box-1");
+      active.className += " active"; 
+      console.log("box1 winner")
+    
+    } else {
+      
+      if (box2 === answerBox) {
+        let active = document.getElementById("box-2");
+        active.className += " active"; 
+        console.log("box2 winner")
+
+      } else {
+      
+        if (box3 === answerBox) {
+          let active = document.getElementById("box-3");
+          active.className += " active"; 
+          console.log("box3 winner")
+
+        } else {
+      
+          if (box4 === answerBox) {
+            let active = document.getElementById("box-4");
+            active.className += " active"; 
+            console.log("box4 winner")
+
+          }  
+        }
+      }  
     }
   }
     runGame();
+
+
+function addActiveClass(){
+
+}    
 
 function turnCounter() {
 
