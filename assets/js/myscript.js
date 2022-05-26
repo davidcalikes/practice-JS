@@ -70,8 +70,6 @@ function shuffle(array) {
      
      let question = document.getElementById("question-button").innerHTML;
 
-     
-      
          if (quizPic === "assets/images/sheep.png") {
            document.getElementById("question-button").innerHTML = "Where is the sheep?";
          
@@ -122,8 +120,17 @@ function shuffle(array) {
         }
 
 function runGame() {
-
-}
+      
+  let box1 = document.getElementById("box-1").getAttribute('src');
+  console.log(box1)
+  let answerBox = document.getElementById("q-thumb").getAttribute('src');
+  console.log(answerBox)
+     
+  if (box1 === answerBox) {
+      console.log("winner");
+    }
+  }
+    runGame();
 
 function turnCounter() {
 

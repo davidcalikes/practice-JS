@@ -213,6 +213,9 @@ text-align: center;
     filter: drop-shadow(15px 15px 8px #333333b8);
 }
 
+#question-container button:hover{ border: 5px solid yellow;
+}
+
 
 #q-thumb{
     width: 6rem; 
@@ -220,6 +223,9 @@ text-align: center;
     border: 5px solid whitesmoke;
     margin: 1rem;
     filter: drop-shadow(15px 15px 8px #333333b8); 
+}
+
+#q-thumb:hover{ border: 5px solid yellow;
 }
 
 @media screen and (max-width: 510px) {
