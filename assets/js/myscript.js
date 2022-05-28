@@ -128,35 +128,33 @@ function runGame() {
   let box4 = document.getElementById("box-4").getAttribute('src');
   
   let answerBox = document.getElementById("q-thumb").getAttribute('src');
-  console.log(answerBox)
+  console.log(answerBox);
      
   if (box1 === answerBox) {
       let active = document.getElementById("box-1");
       active.className += " active"; 
-      console.log("box1 winner")
+      console.log("box1 winner");
     
     } else {
       
       if (box2 === answerBox) {
         let active = document.getElementById("box-2");
         active.className += " active"; 
-        console.log("box2 winner")
-
-      
+        console.log("box2 winner");
       
       } else {
       
         if (box3 === answerBox) {
           let active = document.getElementById("box-3");
           active.className += " active"; 
-          console.log("box3 winner")
+          console.log("box3 winner");
 
         } else {
       
           if (box4 === answerBox) {
             let active = document.getElementById("box-4");
             active.className += " active"; 
-            console.log("box4 winner")
+            console.log("box4 winner");
 
           }  
         }
@@ -171,12 +169,12 @@ function checkCard1 () {
 
   let box1 = document.getElementById("box-1").getAttribute('class');
   
-  console.log(box1)
+  console.log(box1);
 
   let activeBox = "box active";
 
   if (box1 === activeBox) {
-    console.log("You Win!")
+    console.log("You Win!");
   
   } else {
 
@@ -190,12 +188,12 @@ function checkCard2 () {
 
   let box2 = document.getElementById("box-2").getAttribute('class');
   
-  console.log(box2)
+  console.log(box2);
 
   let activeBox = "box active";
 
   if (box2 === activeBox) {
-    console.log("You Win!")
+    console.log("You Win!");
   
   } else {
 
@@ -204,17 +202,17 @@ function checkCard2 () {
   }
 }
 
-// Checks the 3rd flashcard to see if it is the "active" card that matches the card below.
+// Checks the 3rd flashcard to see if it is the "active" card that matches the thumbnail card.
 function checkCard3 () {
 
   let box3 = document.getElementById("box-3").getAttribute('class');
   
-  console.log(box3)
+  console.log(box3);
 
   let activeBox = "box active";
 
   if (box3 === activeBox) {
-    console.log("You Win!")
+    console.log("You Win!");
   
   } else {
 
@@ -222,17 +220,18 @@ function checkCard3 () {
  
   }
 }
+
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard4 () {
 
   let box4 = document.getElementById("box-4").getAttribute('class');
   
-  console.log(box4)
+  console.log(box4);
 
   let activeBox = "box active";
 
   if (box4 === activeBox) {
-    console.log("You Win!")
+    console.log("You Win!");
   
   } else {
 
@@ -253,7 +252,3 @@ function endGame() {
 function displayQuestion() {
 
 }
-
-
-     
-
