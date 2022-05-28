@@ -18,7 +18,28 @@
         </div>
     </header>
 
-    <div id="float-box" >Welcome to Marvelous Matching: Animals <br> How to Play: <br> click or tap the picture <img src="" alt=""> that answers the question and matches the small image below <button id="float-button" >start game</button></div>
+    <!-- An alert-style box that explains how to play the game and contains a button that triggers the JavaScript function to runs the game -->
+
+    <div id="float-box" >
+        <h2> Welcome to Marvelous Matching: Animals <i class="fa-solid fa-paw"></i></h2> <h2> How to Play:</h2>
+        <div class="container">
+            <div class="float-row">
+                <div class="half-box">Click <span>&nbsp <i class="fa-solid fa-arrow-pointer"> </i> &nbsp;</span> or tap <span>&nbsp;<i class="fa-regular fa-hand-pointer"></i>&nbsp;</span> the picture... <span>&nbsp; <i class="fa-regular fa-hand-point-right"></i></span></div>
+                <div class="half-box"> <img class="rules-pic1" src="assets/images/float_pics.png" alt="An image of four random farmyard animals">
+            </div>
+        </div>
+
+        <div class="container"></div>
+            <div class="float-row"> 
+                <div class="half-box">...that answers the question & matches the smaller image!<span> <i class="fa-regular fa-hand-point-right"></i></span></div> 
+                <div class="half-box"><img class="rules-pic2" src="assets/images/float_question.png" alt="An explanitory image of a question button and a small picture of a farmyard animal"></div>
+                
+            </div> 
+        </div>
+        
+    <button id="float-button" > Start Game </button>
+        
+    </div>
 
     <nav>
         <div class="nav-row">
@@ -29,29 +50,25 @@
     </nav>
     
     <section>
-        <div class="container">
+        <div class="game-container">
             <div class="row align-right">
-                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-1" class="box">
-                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-2" class="box">
+                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-1" class="box" onclick="checkCard1()">
+                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-2" class="box" onclick="checkCard2()">
             </div>
             <div class="row align-left">
-                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-3" class="box">
-                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-4" class="box">
+                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-3" class="box" onclick="checkCard3()">
+                <img src="assets/images/placeholder.jpeg" alt="placeholder alt text" id="box-4" class="box" onclick="checkCard4()">
             </div>
         </div>
    
-    <div class="container">
-        
-    <div id="question-container">
-        <button id="question-button">Where is the duck?</button>
-       <img id="q-thumb" src="assets/images/placeholder.jpeg" alt="A picture of a random farmyard animal">
-    </div>
-    
+    <div class="game-container">
+        <div id="question-container">
+            <button id="question-button">Where is the duck?</button>
+            <img id="q-thumb" src="assets/images/placeholder.jpeg" alt="A picture of a random farmyard animal">
+        </div>
     </div>      
 
     </section>  
-
-    
 
     <footer>
         <div class="footer-window">
