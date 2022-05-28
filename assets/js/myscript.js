@@ -31,7 +31,6 @@ function playAbout() {
   });
 }
 
-
 /**
  * Returns random elements from array using Fisher-Yates Shuffle Algorithm. 
  * (Credit: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
@@ -44,8 +43,8 @@ function shuffle(array) {
        randomIndex = Math.floor(Math.random() * currentIndex);
        currentIndex--;
    
-       [array[currentIndex], array[randomIndex]] = [
-         array[randomIndex], array[currentIndex]];
+       [array[currentIndex], array[randomIndex]] = 
+       [array[randomIndex], array[currentIndex]];
      }
    
      return array;
@@ -63,11 +62,14 @@ function shuffle(array) {
      let quizList = animals.slice(0,4);
 
      document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
-
+    
     let quizPic = document.getElementById("q-thumb").getAttribute('src');
-     
+    
     console.log(quizPic);
-     
+
+    // Uses quizzPic variable to duplicate image to floating congratsBox element"
+    document.getElementById("float-pic").src = quizPic;
+    
      let question = document.getElementById("question-button").innerHTML;
 
          if (quizPic === "assets/images/sheep.png") {
@@ -119,7 +121,7 @@ function shuffle(array) {
           }
         }
 
-// Creates matching pair of flash cards and waits for user interaction.       
+// Creates active flash card that matches thumbnail image and waits for user interaction.       
 function runGame() {
       
   let box1 = document.getElementById("box-1").getAttribute('src');
@@ -128,6 +130,7 @@ function runGame() {
   let box4 = document.getElementById("box-4").getAttribute('src');
   
   let answerBox = document.getElementById("q-thumb").getAttribute('src');
+  
   console.log(answerBox);
      
   if (box1 === answerBox) {
@@ -167,26 +170,34 @@ runGame();
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard1 () {
 
-  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
+  function congratsBox() {
+    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
+    congratsBox;
+  } 
+
   let box1 = document.getElementById("box-1").getAttribute('class');
   
   console.log(box1);
-
+  
   let activeBox = "box active";
 
   if (box1 === activeBox) {
-    congratsBox;
+    congratsBox();
   
   } else {
 
       console.log("Try again!");
- 
   }
 }
 
 // Checks the 2nd flashcard to see if it is the "active" card that matches the card below.
 function checkCard2 () {
-  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
+
+  function congratsBox() {
+    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
+    congratsBox;
+  } 
+
   let box2 = document.getElementById("box-2").getAttribute('class');
   
   console.log(box2);
@@ -194,19 +205,22 @@ function checkCard2 () {
   let activeBox = "box active";
 
   if (box2 === activeBox) {
-    congratsBox;
+    congratsBox();
   
   } else {
 
       console.log("Try again!");
- 
   }
 }
 
 // Checks the 3rd flashcard to see if it is the "active" card that matches the thumbnail card.
 function checkCard3 () {
 
-  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
+  function congratsBox() {
+    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
+    congratsBox;
+  } 
+
   let box3 = document.getElementById("box-3").getAttribute('class');
   
   console.log(box3);
@@ -214,19 +228,22 @@ function checkCard3 () {
   let activeBox = "box active";
 
   if (box3 === activeBox) {
-    congratsBox;
+    congratsBox();
   
   } else {
 
       console.log("Try again!");
- 
   }
 }
 
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard4 () {
   
-  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
+  function congratsBox() {
+    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
+    congratsBox;
+  }  
+
   let box4 = document.getElementById("box-4").getAttribute('class');
   
   console.log(box4);
@@ -234,20 +251,15 @@ function checkCard4 () {
   let activeBox = "box active";
 
   if (box4 === activeBox) {
-    congratsBox;
+    congratsBox();
   
   } else {
 
       console.log("Try again!");
- 
   }
 }
 
 
-
-function congratsBox() {
-  
-}
 
 function endGame() {
 
