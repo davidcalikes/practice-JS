@@ -167,6 +167,7 @@ runGame();
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard1 () {
 
+  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
   let box1 = document.getElementById("box-1").getAttribute('class');
   
   console.log(box1);
@@ -174,7 +175,7 @@ function checkCard1 () {
   let activeBox = "box active";
 
   if (box1 === activeBox) {
-    console.log("You Win!");
+    congratsBox;
   
   } else {
 
@@ -185,7 +186,7 @@ function checkCard1 () {
 
 // Checks the 2nd flashcard to see if it is the "active" card that matches the card below.
 function checkCard2 () {
-
+  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
   let box2 = document.getElementById("box-2").getAttribute('class');
   
   console.log(box2);
@@ -193,7 +194,7 @@ function checkCard2 () {
   let activeBox = "box active";
 
   if (box2 === activeBox) {
-    console.log("You Win!");
+    congratsBox;
   
   } else {
 
@@ -205,6 +206,7 @@ function checkCard2 () {
 // Checks the 3rd flashcard to see if it is the "active" card that matches the thumbnail card.
 function checkCard3 () {
 
+  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
   let box3 = document.getElementById("box-3").getAttribute('class');
   
   console.log(box3);
@@ -212,7 +214,7 @@ function checkCard3 () {
   let activeBox = "box active";
 
   if (box3 === activeBox) {
-    console.log("You Win!");
+    congratsBox;
   
   } else {
 
@@ -223,7 +225,8 @@ function checkCard3 () {
 
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard4 () {
-
+  
+  let congratsbox = document.getElementById("congrats-box").style.display = "flex";
   let box4 = document.getElementById("box-4").getAttribute('class');
   
   console.log(box4);
@@ -231,7 +234,7 @@ function checkCard4 () {
   let activeBox = "box active";
 
   if (box4 === activeBox) {
-    console.log("You Win!");
+    congratsBox;
   
   } else {
 
@@ -242,8 +245,8 @@ function checkCard4 () {
 
 
 
-function turnCounter() {
-
+function congratsBox() {
+  
 }
 
 function endGame() {
