@@ -31,6 +31,13 @@ function playAbout() {
   });
 }
 
+/** 
+ * Contains all functions required to run a single game cycle.
+ * Including shuffling of Flashcards, creating a matching pair and congratulating the user for a correct answer.
+ * Includes functions that provides the user audio and visual feedback.  
+ * */
+function runGame() {
+
 /**
  * Returns random elements from array using Fisher-Yates Shuffle Algorithm. 
  * (Credit: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
@@ -122,7 +129,7 @@ function shuffle(array) {
         }
 
 // Creates active flash card that matches thumbnail image and waits for user interaction.       
-function runGame() {
+function makeMatch() {
       
   let box1 = document.getElementById("box-1").getAttribute('src');
   let box2 = document.getElementById("box-2").getAttribute('src');
@@ -165,7 +172,9 @@ function runGame() {
     }
   }
   
-runGame();
+makeMatch();
+
+}
 
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard1 () {
@@ -236,6 +245,8 @@ function checkCard3 () {
   }
 }
 
+runGame();
+
 // Checks the 1st flashcard to see if it is the "active" card that matches the card below.
 function checkCard4 () {
   
@@ -259,10 +270,16 @@ function checkCard4 () {
   }
 }
 
-
-
-function endGame() {
-
+function playAgain() {
+  
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  
+  let congratsBox = document.getElementById("congrats-box").style.display = "none";
+  
+  runGame();
 }
 
 function displayQuestion() {
