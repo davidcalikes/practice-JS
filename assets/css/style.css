@@ -7,11 +7,12 @@
 }
 
 footer i {
-    color: black;
+    color:#42526e;
 }
 
 footer p {
     font-family: Helvetica, sans-serif;
+    color: #42526e;
 }
 
 h1 {
@@ -104,13 +105,17 @@ button i {
     background: green;
     color: azure;
 }
+
+nav {
+    margin-bottom: 5%;
+}
+
 .footer-window {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 10px;
-    margin-top: 2rem;
 }
 
 /* *** ANIMALS GAME STYLING *** */
