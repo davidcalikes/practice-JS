@@ -54,6 +54,7 @@ button i {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 .menu-window li {
@@ -106,9 +107,6 @@ button i {
     color: azure;
 }
 
-nav {
-    margin-bottom: 5%;
-}
 
 .footer-window {
     align-items: center;
@@ -227,7 +225,7 @@ nav {
 }
 
 .nav-link {
-text-align: center;
+    text-align: center;
     color: #42526e;
     font-family: Schoolbell, sans-serif;
 }
@@ -286,13 +284,21 @@ text-align: center;
 .game-container {
 
     display: flex;
-width: 100%;
-justify-content: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3%;
 }
 
 #question-container {
     display: flex;
     margin-top: 1rem;
+}
+
+#play-info {
+
+    text-align: center;
+    color: #42526e;
+    font-family: Schoolbell, sans-serif;
 }
 
 #question-button {
@@ -374,6 +380,14 @@ justify-content: center;
 #congrats-button:hover { border: 5px solid yellow;
 }
 
+@media screen and (max-width: 1000px) {
+
+    #play-info {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+}
 
 @media screen and (max-width: 510px) {
 
