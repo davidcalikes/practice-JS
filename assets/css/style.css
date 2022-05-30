@@ -380,19 +380,81 @@ button i {
 #congrats-button:hover { border: 5px solid yellow;
 }
 
+@media screen and (max-width: 1250px) {
+    .nav-row {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+#sound-link {
+    justify-content: right;
+}
+
+#mode-link {
+    justify-content: left;
+}
+
+}
+
+
 @media screen and (max-width: 1000px) {
 
     #play-info {
-        margin-left: 35%;
-        margin-right: 35%;
+        margin-left: 25%;
+        margin-right: 25%;
     }
+
+}
+
+@media screen and (max-width: 900px) {
+    
+    #sound-link {
+        justify-content: center;
+    }
+    
+    #mode-link {
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+h1 {
+    font-size: 200%;
+}
+
+#sound-link {
+    font-size: 80%;
+}
+    
+#mode-link {
+    font-size: 80%;
+}
+
+#play-info {
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
 }
 
 @media screen and (max-width: 510px) {
 
-    .menu-button {
-        font-size: 1.4rem;
+    .nav-link {
+        width: 100%;
+    }
+
+    .back-link {
+        font-size: 65%;
+    }
+
+    #sound-link {
+        font-size: 65%;
+    }
+        
+    #mode-link {
+        font-size: 65%;
     }
 
     i {
@@ -421,7 +483,33 @@ button i {
             width: 15rem;
         }
 
+        #footer-info {
+            width: 100%;
+            margin-left: 25%;
+        }
+
+        #play-info {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #question-button {
+            font-size: 1.2rem;
+        }
+
     @media screen and (max-width: 400px) {
+
+        .back-link {
+            font-size: 50%;
+        }
+    
+        #sound-link {
+            font-size: 50%;
+        }
+            
+        #mode-link {
+            font-size: 50%;
+        }
         
         #box-1 {
             width: 100px; 
@@ -438,6 +526,15 @@ button i {
         #box-4 {
             width: 100px; 
             height: 100px;  
+        }
+
+        #play-info {
+            font-size: 70%;
+        }
+
+        #question-button {
+            width: 50%;
+            font-size: 1rem;
         }
 
 
