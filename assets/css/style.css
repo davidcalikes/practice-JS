@@ -505,13 +505,48 @@ h1 {
             font-size: 75%;
         }
 
+        .back-link {
+            font-size: 50%;
+        }
+
+        #sound-link {
+            font-size: 55%;
+        }
+            
+        #mode-link {
+            font-size: 55%;
+        }
+
+        #box-1 {
+            width: 125px; 
+            height: 125px;    
+        }
+        #box-2 {
+            width: 125px; 
+            height: 150px;   
+        }
+        #box-3 {
+            width: 125px; 
+            height: 125px; 
+        }
+        #box-4 {
+            width: 125px; 
+            height: 125px;  
+        }
+
+        #q-thumb {
+            margin: 0%;
+        }
+
+        #question-button {
+            margin-right: 5%;
+        }
+
     }
 
     @media screen and (max-width: 400px) {
 
-        .back-link {
-            font-size: 50%;
-        }
+        
     
         #sound-link {
             font-size: 50%;
