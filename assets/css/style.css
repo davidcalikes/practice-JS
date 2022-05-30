@@ -116,6 +116,10 @@ button i {
     padding-top: 10px;
 }
 
+.footer-base p {
+    margin-bottom: 5%;
+}
+
 /* *** ANIMALS GAME STYLING *** */
 
 #float-box {
@@ -289,9 +293,19 @@ button i {
     margin-bottom: 3%;
 }
 
-#question-container {
+.question-container {
+
+    display: block;
+    width: 70%;
+    margin-left: 27%;
+    margin-bottom: 3%;
+}
+
+#question-row {
     display: flex;
-    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
 }
 
 #play-info {
@@ -301,28 +315,38 @@ button i {
     font-family: Schoolbell, sans-serif;
 }
 
+.q-box {
+    width: 100%
+}
+.thumb-box {
+    width: 100%;
+    text-align: left;
+    margin-left: 5%;
+}
+
 #question-button {
     
+    width: 100%;
     background: orangered;
     color: white;
-    padding: 20px;
-    width: 20rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     border: 5px solid white;
     font-family: Schoolbell, sans-serif;
-    font-size: 1.9rem;
-    margin: 1%;
+    font-size: 1.6rem;
     filter: drop-shadow(15px 15px 8px #333333b8);
 }
 
 #question-container button:hover{ border: 5px solid yellow;
 }
 
-#q-thumb{
-    width: 6rem; 
+#q-thumb{ 
+    width: 25%;
     border-radius: 10px;
     border: 5px solid whitesmoke;
-    margin: 1rem;
     filter: drop-shadow(15px 15px 8px #333333b8); 
 }
 
@@ -422,6 +446,15 @@ button i {
 
 }
 
+@media screen and (max-width: 800px) {
+
+    .question-container {
+        width: 80%;
+        margin-left: 22%;
+    }
+
+}
+
 @media screen and (max-width: 750px) {
 
 h1 {
@@ -443,7 +476,20 @@ h1 {
 
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 800px) {
+
+    .question-container {
+        width: 90%;
+        margin-left: 18%;
+    }
+
+    #question-button {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 515px) {
 
     .nav-link {
         width: 100%;
@@ -483,10 +529,6 @@ h1 {
             height: 150px;  
         }
 
-        #question-button {
-            width: 15rem;
-        }
-
         #footer-info {
             width: 100%;
             margin-left: 25%;
@@ -497,9 +539,6 @@ h1 {
             margin-right: 5%;
         }
 
-        #question-button {
-            font-size: 1.2rem;
-        }
 
     @media screen and (max-width: 450px) {
 
@@ -538,13 +577,6 @@ h1 {
             height: 125px;  
         }
 
-        #q-thumb {
-            margin: 0%;
-        }
-
-        #question-button {
-            margin-right: 5%;
-        }
 
     }
 
@@ -581,11 +613,6 @@ h1 {
             font-size: 70%;
         }
 
-        #question-button {
-            width: 50%;
-            font-size: 1rem;
-        }
-
 
     @media screen and (max-width: 350px) {
 
@@ -597,18 +624,7 @@ h1 {
             margin-left: 1%;
             margin-right: 1%;
             }
-        }
-
-        #question-container {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .question-button {
-            order: 2;
-        }
-
-
+    }
     
     }       
 }
