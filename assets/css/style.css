@@ -476,19 +476,6 @@ h1 {
 
 }
 
-@media screen and (max-width: 800px) {
-
-    .question-container {
-        width: 90%;
-        margin-left: 18%;
-    }
-
-    #question-button {
-        font-size: 1.2rem;
-    }
-
-}
-
 @media screen and (max-width: 515px) {
 
     .nav-link {
