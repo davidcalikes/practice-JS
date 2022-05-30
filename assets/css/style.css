@@ -6,6 +6,10 @@
     border: none;
 }
 
+body {
+    background: linear-gradient(to bottom, #ffffff, #80c7f0, #ffffff);
+}
+
 footer i {
     color:#42526e;
 }
@@ -30,10 +34,6 @@ button:hover{ border: 5px solid yellow;
 }
 
 .box:hover{ border: 5px solid yellow;
-}
-
-body {
-    background: linear-gradient(to bottom, #ffffff, #80c7f0, #ffffff);
 }
 
 .title-window {
@@ -333,12 +333,12 @@ button i {
     display: none;
     flex-direction: column;
     width: 60%;
-    height: 400px;
+    height: 80vh;
     position: fixed;
     z-index: 999; 
     left: 0; 
     right: 0; 
-    top: 70px;
+    top: 50px;
     margin-left: auto; 
     margin-right: auto; 
     background-color: rgb(89, 169, 196);
@@ -353,7 +353,11 @@ button i {
     align-items: center;
 }
 
-.congrats-box {
+.center-box {
+    margin-top: 10vh;
+}
+
+.congrats-img {
     
     border-radius: 10px;
     border: 5px solid whitesmoke;
@@ -523,7 +527,7 @@ h1 {
         }
         #box-2 {
             width: 125px; 
-            height: 150px;   
+            height: 125px;   
         }
         #box-3 {
             width: 125px; 
