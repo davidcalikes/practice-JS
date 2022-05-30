@@ -1,4 +1,4 @@
-// Plays button sound when button is clicked and loads relevant game page.
+// Plays animals button sound when button is clicked and loads animals game page.
 function playAnimals() {
   let sound = document.getElementById("animals");
   sound.play();
@@ -6,7 +6,7 @@ function playAnimals() {
     location.href = 'animals.html';
   });
 }
-
+// Plays shapes button sound when button is clicked and loads shapes game page.
 function playShapes() {
   let sound = document.getElementById("shapes");
   sound.play();
@@ -14,7 +14,7 @@ function playShapes() {
     location.href = 'shapes.html';
   });
 }
-
+// Plays colours button sound when button is clicked and loads colours game page.
 function playColours() {
   let sound = document.getElementById("colours");
   sound.play();
@@ -22,7 +22,7 @@ function playColours() {
     location.href = 'colours.html';
   });
 }
-
+// Plays pop button sound when button is clicked and loads about page.
 function playAbout() {
   let sound = document.getElementById("about");
   sound.play();
