@@ -296,8 +296,7 @@ button i {
 .question-container {
 
     display: block;
-    width: 70%;
-    margin-left: 27%;
+    width: 100%;
     margin-bottom: 3%;
 }
 
@@ -319,9 +318,9 @@ button i {
     width: 100%
 }
 .thumb-box {
-    width: 100%;
-    text-align: left;
-    margin-left: 5%;
+    width: 50%;
+    text-align: center;
+    margin-right: 15%;
 }
 
 #question-button {
@@ -336,15 +335,17 @@ button i {
     border-radius: 10px;
     border: 5px solid white;
     font-family: Schoolbell, sans-serif;
-    font-size: 1.6rem;
     filter: drop-shadow(15px 15px 8px #333333b8);
+    font-size: 1rem;
+    margin-left: 8%;
 }
 
 #question-container button:hover{ border: 5px solid yellow;
 }
 
 #q-thumb{ 
-    width: 25%;
+    width: 80%;
+    margin-left: 30%;
     border-radius: 10px;
     border: 5px solid whitesmoke;
     filter: drop-shadow(15px 15px 8px #333333b8); 
@@ -422,6 +423,22 @@ button i {
     justify-content: left;
 }
 
+.thumb-box {
+    text-align: center;
+    width: 50%;
+    margin-right: 15%;
+}
+
+    #q-thumb {
+    width: 80%;
+    margin-left: 30%;
+}
+
+    #question-button {
+        font-size: 1rem;
+        margin-left: 8%;
+    }
+
 }
 
 
@@ -431,6 +448,21 @@ button i {
         margin-left: 25%;
         margin-right: 25%;
     }
+    .thumb-box {
+        text-align: center;
+        width: 50%;
+        margin-right: 15%;
+    }
+
+        #q-thumb {
+        width: 80%;
+        margin-left: 30%;
+    }
+
+        #question-button {
+            font-size: 1rem;
+            margin-left: 8%;
+        }
 
 }
 
@@ -444,14 +476,21 @@ button i {
         justify-content: center;
     }
 
-}
-
-@media screen and (max-width: 800px) {
-
-    .question-container {
-        width: 80%;
-        margin-left: 22%;
+    .thumb-box {
+        text-align: center;
+        width: 50%;
+        margin-right: 15%;
     }
+
+        #q-thumb {
+        width: 80%;
+        margin-left: 30%;
+    }
+
+        #question-button {
+            font-size: 1rem;
+            margin-left: 8%;
+        }
 
 }
 
@@ -473,6 +512,24 @@ h1 {
     margin-left: 15%;
     margin-right: 15%;
 }
+
+.thumb-box {
+    text-align: center;
+    width: 50%;
+    margin-right: 15%;
+}
+
+    #q-thumb {
+    width: 80%;
+    margin-left: 30%;
+}
+
+    #question-button {
+        font-size: 1rem;
+        margin-left: 8%;
+    }
+
+
 
 }
 
@@ -526,8 +583,24 @@ h1 {
             margin-right: 5%;
         }
 
+        .thumb-box {
+            text-align: center;
+            width: 50%;
+            margin-right: 15%;
+        }
+    
+            #q-thumb {
+            width: 80%;
+            margin-left: 30%;
+        }
+    
+            #question-button {
+                font-size: 1rem;
+                margin-left: 8%;
+            }
 
-    @media screen and (max-width: 450px) {
+
+    @media screen and (max-width: 460px) {
 
         #play-info {
             margin-left: 3%;
@@ -564,13 +637,26 @@ h1 {
             height: 125px;  
         }
 
+        .thumb-box {
+            text-align: center;
+            width: 50%;
+            margin-right: 15%;
+        }
+    
+            #q-thumb {
+            width: 80%;
+            margin-left: 30%;
+        }
+    
+            #question-button {
+                font-size: 1rem;
+                margin-left: 8%;
+            }
 
     }
 
     @media screen and (max-width: 400px) {
 
-        
-    
         #sound-link {
             font-size: 50%;
         }
@@ -600,8 +686,40 @@ h1 {
             font-size: 70%;
         }
 
+        .thumb-box {
+            text-align: center;
+            width: 50%;
+            margin-right: 15%;
+        }
+    
+            #q-thumb {
+            width: 80%;
+            margin-left: 30%;
+        }
+    
+            #question-button {
+                font-size: 0.7rem;
+                margin-left: 8%;
+            }
+
 
     @media screen and (max-width: 350px) {
+
+        .thumb-box {
+            text-align: center;
+            width: 50%;
+            margin-right: 15%;
+        }
+    
+            #q-thumb {
+            width: 80%;
+            margin-left: 30%;
+        }
+    
+            #question-button {
+                font-size: 0.7rem;
+                margin-left: 8%;
+            }
 
         .menu-button {
             font-size: 1.2rem;
@@ -612,6 +730,25 @@ h1 {
             margin-right: 1%;
             }
     }
+}
     
+    @media screen and (max-width: 300px) {
+
+        .thumb-box {
+        text-align: center;
+        width: 50%;
+        margin-right: 15%;
+    }
+
+        #q-thumb {
+        width: 80%;
+        margin-left: 30%;
+    }
+
+        #question-button {
+            font-size: 0.6rem;
+            margin-left: 8%;
+        }
+
     }       
 }
