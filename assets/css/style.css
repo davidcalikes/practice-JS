@@ -89,24 +89,24 @@ button i {
 }
 
 #animals-button {
-    background: rgb(219, 24, 70);
+    background: orangered;
     color: #ffffff;
+    cursor: pointer;
 }
 
 #shapes-button {
-    background: rgb(237, 136, 13);
+    background: rgb(61, 226, 36);
     color: oldlace;
+    cursor: pointer;
 }
 
 #colors-button {
-    background: rgb(3, 7, 104);
+    background: rgb(133, 13, 193);
     color: antiquewhite;
+    cursor: pointer;
 }
 
-#about-button {
-    background: green;
-    color: azure;
-}
+
 
 
 .footer-window {
@@ -283,9 +283,9 @@ button i {
     border: 5px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    
     width: 185px;
     height: 185px;
+    cursor: pointer;
 }
 
 .game-container {
@@ -344,9 +344,10 @@ button i {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     margin-right: 3%;
+    cursor: pointer;
 }
 
-#question-container button:hover{ border: 5px solid yellow;
+#question-button:hover{ border: 5px solid yellow;
 }
 
 #q-thumb{ 
@@ -356,6 +357,7 @@ button i {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     margin-left: 3%;
     width: 92.5px;
+    cursor: pointer;
 }
 
 #q-thumb:hover{ border: 5px solid yellow;
@@ -510,14 +512,9 @@ h1 {
         height: 150px;
     }
 
-    i {
-        margin-left: 3%;
-        margin-right: 3%;
-        }
-
         #footer-info {
             width: 100%;
-            margin-left: 25%;
+            text-align: center;
         }
 
         

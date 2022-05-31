@@ -181,7 +181,7 @@ function checkCard1 () {
 
   function congratsBox() {
     let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox;
+    congratsBox();
   } 
 
   let box1 = document.getElementById("box-1").getAttribute('class');
@@ -204,7 +204,8 @@ function checkCard2 () {
 
   function congratsBox() {
     let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox;
+    
+    congratsBox();
   } 
 
   let box2 = document.getElementById("box-2").getAttribute('class');
@@ -227,7 +228,7 @@ function checkCard3 () {
 
   function congratsBox() {
     let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox;
+    congratsBox();
   } 
 
   let box3 = document.getElementById("box-3").getAttribute('class');
@@ -252,7 +253,7 @@ function checkCard4 () {
   
   function congratsBox() {
     let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox;
+    congratsBox();
   }  
 
   let box4 = document.getElementById("box-4").getAttribute('class');
