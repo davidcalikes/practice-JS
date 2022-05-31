@@ -281,8 +281,8 @@ button i {
     border: 5px solid whitesmoke;
     margin: 1rem;
     filter: drop-shadow(15px 15px 8px #333333b8);
-    width: 200px;
-    height: 200px;
+    width: 185px;
+    height: 185px;
 }
 
 .game-container {
@@ -315,7 +315,11 @@ button i {
 }
 
 .q-box {
-    width: 100%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
 .thumb-box {
     width: 50%;
@@ -325,8 +329,7 @@ button i {
 
 #question-button {
     
-    width: 100%;
-    background: rgb(0, 255, 60);
+    background: orangered;
     color: white;
     padding-left: 30px;
     padding-right: 30px;
@@ -337,18 +340,19 @@ button i {
     font-family: Schoolbell, sans-serif;
     filter: drop-shadow(15px 15px 8px #333333b8);
     font-size: 1rem;
-    margin-left: 8%;
+    margin-right: 3%;
 }
 
 #question-container button:hover{ border: 5px solid yellow;
 }
 
 #q-thumb{ 
-    width: 80%;
-    margin-left: 30%;
+    
     border-radius: 10px;
     border: 5px solid whitesmoke;
     filter: drop-shadow(15px 15px 8px #333333b8); 
+    margin-left: 3%;
+    width: 92.5px;
 }
 
 #q-thumb:hover{ border: 5px solid yellow;
@@ -429,16 +433,6 @@ button i {
     margin-right: 15%;
 }
 
-    #q-thumb {
-    width: 80%;
-    margin-left: 30%;
-}
-
-    #question-button {
-        font-size: 1rem;
-        margin-left: 8%;
-    }
-
 }
 
 
@@ -448,22 +442,7 @@ button i {
         margin-left: 25%;
         margin-right: 25%;
     }
-    .thumb-box {
-        text-align: center;
-        width: 50%;
-        margin-right: 15%;
-    }
-
-        #q-thumb {
-        width: 80%;
-        margin-left: 30%;
-    }
-
-        #question-button {
-            font-size: 1rem;
-            margin-left: 8%;
-        }
-
+    
 }
 
 @media screen and (max-width: 900px) {
@@ -476,25 +455,10 @@ button i {
         justify-content: center;
     }
 
-    .thumb-box {
-        text-align: center;
-        width: 50%;
-        margin-right: 15%;
-    }
-
-        #q-thumb {
-        width: 80%;
-        margin-left: 30%;
-    }
-
-        #question-button {
-            font-size: 1rem;
-            margin-left: 8%;
-        }
-
 }
 
 @media screen and (max-width: 770px) {
+
 
 h1 {
     font-size: 200%;
@@ -509,27 +473,9 @@ h1 {
 }
 
 #play-info {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 14%;
+    margin-right: 14%;
 }
-
-.thumb-box {
-    text-align: center;
-    width: 50%;
-    margin-right: 15%;
-}
-
-    #q-thumb {
-    width: 80%;
-    margin-left: 30%;
-}
-
-    #question-button {
-        font-size: 1rem;
-        margin-left: 8%;
-    }
-
-
 
 }
 
@@ -551,26 +497,19 @@ h1 {
         font-size: 65%;
     }
 
+    #play-info {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .box{
+        width: 150px;
+        height: 150px;
+    }
+
     i {
         margin-left: 3%;
         margin-right: 3%;
-        }
-
-        #box-1 {
-            width: 150px; 
-            height: 150px;    
-        }
-        #box-2 {
-            width: 150px; 
-            height: 150px;   
-        }
-        #box-3 {
-            width: 150px; 
-            height: 150px; 
-        }
-        #box-4 {
-            width: 150px; 
-            height: 150px;  
         }
 
         #footer-info {
@@ -578,33 +517,13 @@ h1 {
             margin-left: 25%;
         }
 
-        #play-info {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        .thumb-box {
-            text-align: center;
-            width: 50%;
-            margin-right: 15%;
-        }
-    
-            #q-thumb {
-            width: 80%;
-            margin-left: 30%;
-        }
-    
-            #question-button {
-                font-size: 1rem;
-                margin-left: 8%;
-            }
-
+        
 
     @media screen and (max-width: 460px) {
 
         #play-info {
-            margin-left: 3%;
-            margin-right: 3%;
+            margin-left: 11%;
+            margin-right: 11%;
             font-size: 75%;
         }
 
@@ -620,38 +539,14 @@ h1 {
             font-size: 55%;
         }
 
-        #box-1 {
-            width: 125px; 
-            height: 125px;    
-        }
-        #box-2 {
-            width: 125px; 
-            height: 125px;   
-        }
-        #box-3 {
-            width: 125px; 
-            height: 125px; 
-        }
-        #box-4 {
-            width: 125px; 
-            height: 125px;  
+        .box{
+            width: 125px;
+            height: 125px;
         }
 
-        .thumb-box {
-            text-align: center;
-            width: 50%;
-            margin-right: 15%;
+        #q-thumb {
+            width: 62.5px;
         }
-    
-            #q-thumb {
-            width: 80%;
-            margin-left: 30%;
-        }
-    
-            #question-button {
-                font-size: 1rem;
-                margin-left: 8%;
-            }
 
     }
 
@@ -665,61 +560,21 @@ h1 {
             font-size: 50%;
         }
         
-        #box-1 {
-            width: 100px; 
-            height: 100px;   
+        .box{
+            width: 100px;
+            height: 100px;
         }
-        #box-2 {
-            width: 100px; 
-            height: 100px;  
-        }
-        #box-3 {
-            width: 100px; 
-            height: 100px; 
-        }
-        #box-4 {
-            width: 100px; 
-            height: 100px;  
+
+        #q-thumb {
+            width: 50px;
         }
 
         #play-info {
             font-size: 70%;
         }
 
-        .thumb-box {
-            text-align: center;
-            width: 50%;
-            margin-right: 15%;
-        }
-    
-            #q-thumb {
-            width: 80%;
-            margin-left: 30%;
-        }
-    
-            #question-button {
-                font-size: 0.7rem;
-                margin-left: 8%;
-            }
-
-
     @media screen and (max-width: 350px) {
 
-        .thumb-box {
-            text-align: center;
-            width: 50%;
-            margin-right: 15%;
-        }
-    
-            #q-thumb {
-            width: 80%;
-            margin-left: 30%;
-        }
-    
-            #question-button {
-                font-size: 0.7rem;
-                margin-left: 8%;
-            }
 
         .menu-button {
             font-size: 1.2rem;
@@ -730,25 +585,13 @@ h1 {
             margin-right: 1%;
             }
     }
-}
-    
-    @media screen and (max-width: 300px) {
 
-        .thumb-box {
-        text-align: center;
-        width: 50%;
-        margin-right: 15%;
-    }
-
-        #q-thumb {
-        width: 80%;
-        margin-left: 30%;
-    }
+    @media screen and (max-width: 350px) {
 
         #question-button {
-            font-size: 0.6rem;
-            margin-left: 8%;
+        font-size: .7rem;
         }
-
-    }       
+    }
+}
+    
 }
