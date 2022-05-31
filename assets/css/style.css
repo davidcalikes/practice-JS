@@ -364,13 +364,13 @@ button i {
 #congrats-box {
     display: none;
     flex-direction: column;
-    width: 60%;
-    height: 80vh;
+    width: 70vw;
+    height: 70vh;
     position: fixed;
     z-index: 999; 
     left: 0; 
     right: 0; 
-    top: 50px;
+    top: 5vh;
     margin-left: auto; 
     margin-right: auto; 
     background-color: rgb(89, 169, 196);
