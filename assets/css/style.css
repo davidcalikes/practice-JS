@@ -38,6 +38,30 @@ h2 {
     justify-content: space-evenly;
 }
 
+.menu-info-row {
+    width: 100%;
+    padding-top:  1%;
+    padding-bottom: 1%;
+    font-size: 90%;
+    background-color: #1d5cc9;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    margin-left: 0%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 3px solid white;
+}
+
+.menu-info-row h2{
+    color: #ffffff;
+}
+
+
+
 button:hover{ border: 5px solid yellow;
 }
 
@@ -83,13 +107,24 @@ button i {
     max-width: 600px;
 }
 
+/* Animated Flashing Text */
+
+.flash-prompt {
+    animation: flash linear 1.5s infinite;
+}
+@keyframes flash {
+    0% {opacity: 1;}
+    50% {opacity: .2;}
+    100% {opacity: 1;}
+}
+
 .game-logo {
     width: 65%;  
     max-width: 400px;
 }
 
 .menu-button {
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     width: 100%;
     border: 5px solid white;
@@ -234,11 +269,17 @@ footer p {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
 
 }
 
 .back-link {
     text-decoration: none;
+}
+
+.back-link h1 {
+    font-size: 200%;
 }
 
 .back-link h1:hover{
@@ -249,6 +290,7 @@ footer p {
     text-align: center;
     color: #42526e;
     font-family: Schoolbell, sans-serif;
+    font-size: 100%;
 }
 
 /* Main Game Area */
@@ -418,16 +460,17 @@ footer p {
 /* *** MEDIA QUERIES *** */
 
 @media screen and (max-width: 1250px) {
+    
     .nav-row {
-        width: 100%;
-        margin-left: 0%;
+    width: 100%;
+    margin-left: 0%;
     }
 
-.thumb-box {
+    .thumb-box {
     text-align: center;
     width: 50%;
     margin-right: 15%;
-}
+    }
 
 }
 
@@ -435,8 +478,8 @@ footer p {
 @media screen and (max-width: 1000px) {
 
     #play-info {
-        margin-left: 25%;
-        margin-right: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
     }
     
 }
@@ -445,24 +488,45 @@ footer p {
 @media screen and (max-width: 770px) {
 
 
-h1 {
+    h1 {
     font-size: 200%;
-}
+    }
 
-h2 {
+    h2 {
     font-size: 100%;
-}
+        }
 
-#play-info {
+    #play-info {
     margin-left: 14%;
     margin-right: 14%;
+    }
+
 }
+
+@media screen and (max-width: 700px) {
+
+    .game-menu-row{
+    width: 100%;
+    margin-left: 0%;
+    }
+    .box {
+        width: 160px;
+        height: 160px;
+    }
+
+    .menu-row h1{
+        font-size: 175%;
+    }
+
+    .menu-row {
+        width: 90%;
+        margin-left: 5%;
+    }
 
 }
 
 @media screen and (max-width: 515px) {
 
-    
 
     .back-link {
         font-size: 65%;
@@ -483,7 +547,12 @@ h2 {
             text-align: center;
         }
 
-        
+        .menu-row {
+            width: 100%;
+            margin-left: 0%;
+        }
+
+    }
 
     @media screen and (max-width: 460px) {
 
@@ -514,12 +583,24 @@ h2 {
             width: 62.5px;
         }
 
+        .back-link h1 {
+            font-size: 175%;
+        }
+
+        .nav-link {
+            font-size: 70%;
+        }
+
     }
 
     @media screen and (max-width: 400px) {
 
         .menu-button {
             font-size: 1.2rem;
+        }
+
+        .menu-info-row h2{
+            font-size: 70%;
         }
 
         #sound-link {
@@ -543,25 +624,4 @@ h2 {
             font-size: 70%;
         }
 
-    @media screen and (max-width: 350px) {
-
-
-        .menu-button {
-            font-size: 1.2rem;
-        }
-    
-        i {
-            margin-left: 1%;
-            margin-right: 1%;
-            }
-    }
-
-    @media screen and (max-width: 350px) {
-
-        #question-button {
-        font-size: .7rem;
-        }
-    }
-}
-    
-}
+    }    
