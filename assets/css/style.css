@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Schoolbell&family=Short+Stack&display=swap');
 
+/* *** GENERAL STYLE RULES *** */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,24 +12,30 @@ body {
     background: linear-gradient(to bottom, #ffffff, #80c7f0, #ffffff);
 }
 
-footer i {
-    color:#42526e;
-}
-
-footer p {
-    font-family: Helvetica, sans-serif;
-    color: #42526e;
-}
-
 h1 {
-    text-align: center;
     font-size: 300%;
+    text-align: center;
+    color: #42526e;
+    font-family: Schoolbell, sans-serif;
+}
+h2 {
     color: #42526e;
     font-family: Schoolbell, sans-serif;
 }
 
-#menu-link {
-    text-decoration: none;
+.container {
+    display: block;
+    width: 100%;
+}
+
+.menu-row {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 button:hover{ border: 5px solid yellow;
@@ -36,13 +44,16 @@ button:hover{ border: 5px solid yellow;
 .box:hover{ border: 5px solid yellow;
 }
 
-.title-window {
+.logo-container {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 10px;
 }
+
+/* *** MENU PAGE STYLING *** */
+/* Menu Page Navigation Bar*/
 
 button i {
     margin-left: 10%;
@@ -67,7 +78,7 @@ button i {
     max-width: 600px;
 }
 
-.header-logo {
+.menu-logo {
     width: 90%;  
     max-width: 600px;
 }
@@ -76,6 +87,7 @@ button i {
     width: 65%;  
     max-width: 400px;
 }
+
 .menu-button {
     padding: 30px;
     border-radius: 10px;
@@ -106,8 +118,7 @@ button i {
     cursor: pointer;
 }
 
-
-
+/* Footer Section Styleing*/
 
 .footer-window {
     align-items: center;
@@ -121,7 +132,18 @@ button i {
     margin-bottom: 5%;
 }
 
-/* *** ANIMALS GAME STYLING *** */
+footer i {
+    color:#42526e;
+}
+
+footer p {
+    font-family: Helvetica, sans-serif;
+    color: #42526e;
+}
+
+/* *** GAME PAGE STYLING *** */
+
+/* Floating element explains how to play and then dissapears on button click */
 
 #float-box {
     display: none;
@@ -147,9 +169,10 @@ button i {
     align-items: center;
 }
 
-.container {
-    display: block;
+.float-row {
+    display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 .half-box {
@@ -202,28 +225,20 @@ button i {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     
 }
+/* Game Page Navigation Menu & Toggle Switches */
 
-.nav-row {
+.game-menu-row {
+
     display: flex;
-    width: 60%;
-    margin-left: 20%;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-}
+    justify-content: space-evenly;
 
-.game-nav {
-    display: flex;
-    width: 33%;
-    justify-content: center;
 }
 
 .back-link {
     text-decoration: none;
-    font-size: 80%;
-}
-
-.back-link i{
-    font-size: 80%;
-    margin: 5px;
 }
 
 .back-link h1:hover{
@@ -236,11 +251,7 @@ button i {
     font-family: Schoolbell, sans-serif;
 }
 
-.float-row {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
+/* Main Game Area */
 
 .row {
     width: 100%;
@@ -260,22 +271,6 @@ button i {
 .align-left {
     justify-content: left;
 
-}
-
-#box-1 { 
-    background-size: 100%; 
-}
-
-#box-2 {
-    background-size: 100%;  
-}
-
-#box-3 { 
-    background-size: 100%;
-}
-
-#box-4 {    
-    background-size: 100%;   
 }
 
 .box{
@@ -363,6 +358,8 @@ button i {
 #q-thumb:hover{ border: 5px solid yellow;
 }
 
+/* Floating element that appears on correct answer and disappears on button click */
+
 #congrats-box {
     display: none;
     flex-direction: column;
@@ -418,19 +415,13 @@ button i {
 #congrats-button:hover { border: 5px solid yellow;
 }
 
+/* *** MEDIA QUERIES *** */
+
 @media screen and (max-width: 1250px) {
     .nav-row {
         width: 100%;
         margin-left: 0%;
     }
-
-#sound-link {
-    justify-content: right;
-}
-
-#mode-link {
-    justify-content: left;
-}
 
 .thumb-box {
     text-align: center;
@@ -450,17 +441,6 @@ button i {
     
 }
 
-@media screen and (max-width: 900px) {
-    
-    #sound-link {
-        justify-content: center;
-    }
-    
-    #mode-link {
-        justify-content: center;
-    }
-
-}
 
 @media screen and (max-width: 770px) {
 
@@ -469,12 +449,8 @@ h1 {
     font-size: 200%;
 }
 
-#sound-link {
-    font-size: 80%;
-}
-    
-#mode-link {
-    font-size: 80%;
+h2 {
+    font-size: 100%;
 }
 
 #play-info {
@@ -486,19 +462,9 @@ h1 {
 
 @media screen and (max-width: 515px) {
 
-    .nav-link {
-        width: 100%;
-    }
+    
 
     .back-link {
-        font-size: 65%;
-    }
-
-    #sound-link {
-        font-size: 65%;
-    }
-        
-    #mode-link {
         font-size: 65%;
     }
 
@@ -551,6 +517,10 @@ h1 {
     }
 
     @media screen and (max-width: 400px) {
+
+        .menu-button {
+            font-size: 1.2rem;
+        }
 
         #sound-link {
             font-size: 50%;
