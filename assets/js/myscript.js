@@ -1,3 +1,9 @@
+// Mutes Page Audio as default setting//
+const sounds = document.querySelectorAll("audio");
+for (const sound of sounds) {
+sound.muted = true
+}
+
 // Plays animals button sound when button is clicked and loads animals game page.
 function playAnimals() {
   let sound = document.getElementById("animals");
@@ -281,14 +287,23 @@ function soundToggle() {
   
   let soundOnOff = document.getElementById("sound-on-off");
   let soundIcon = document.getElementById("sound-icon");
+  
   if (soundOnOff.innerHTML === "OFF") {
       soundOnOff.innerHTML = "ON";
       soundIcon.className = "fa-solid fa-volume-low";
+      const sounds = document.querySelectorAll("audio");
+      for (const sound of sounds) {
+      sound.muted = false;
+      }
       
-
   } else {
     soundOnOff.innerHTML = "OFF";
     soundIcon.className = "fa-solid fa-volume-xmark"
+    const sounds = document.querySelectorAll("audio");
+    for (const sound of sounds) {
+    sound.muted = true;
+}
+
   }
 }
 
