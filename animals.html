@@ -12,40 +12,52 @@
     
 <body>
 
+    <!-- Animals Page Header Section -->
+
     <header>
         <div class="logo-container">
             <img class="game-logo" src="assets/images/mm-header.png" alt="A cartoon logo featuring stylised text that says marvelous matching and is surrounded by cartoon animals and colorful shapes">  
         </div>
     </header>
 
-    <!-- An alert-style box that explains how to play the game and contains a button that triggers the JavaScript function to runs the game -->
+    <!-- A modal-style element that explains to the user how to play and contains a button that triggers the JavaScript function to run the game -->
 
-    <div id="float-box" >
+    <div id="modal-box">
         <h2> Welcome to Marvelous Matching: Animals <i class="fa-solid fa-paw"></i></h2> <h2> How to Play:</h2>
-        <div class="container">
-            <div class="float-row">
-                <div class="half-box">Click <span>&nbsp <i class="fa-solid fa-arrow-pointer"> </i> &nbsp;</span> or tap <span>&nbsp;<i class="fa-regular fa-hand-pointer"></i>&nbsp;</span> the picture... <span>&nbsp; <i class="fa-regular fa-hand-point-right"></i></span></div>
-                <div class="half-box"> <img class="rules-pic1" src="assets/images/float_pics.png" alt="An image of four random farmyard animals">
+        <div class="modal-container">
+            <div class="modal-row">
+                <div class="modal-unit">
+                    <img class="rules-pic1" src="assets/images/float_pics.png" alt="An image of four random farmyard animals">
+                </div> 
+            </div>
+            <div class="modal-row">
+                <div class="modal-unit">Click <span>&nbsp <i class="fa-solid fa-arrow-pointer"> </i> &nbsp;</span> or tap <span>&nbsp;<i class="fa-regular fa-hand-pointer"></i>&nbsp;</span> the picture...</div>
+            </div>
+            <div class="modal-row">
+                <div class="modal-unit"> 
+                    <img class="rules-pic2" src="assets/images/float_question.png" alt="An explanitory image of a question button and a small picture of a farmyard animal">
+                </div>
+            </div> 
+            <div class="modal-row"> 
+                <div class="modal-unit">
+                    ...that answers the question & matches the smaller image!
+                </div> 
+            </div> 
+            <div class="modal-row"> 
+                <div class="modal-unit">
+                    <audio id="start-btn" src="assets/audio/pop.mp3"></audio>
+                    <button id="modal-button" onclick="startGame();playStart();"> Start Game </button>
+                </div> 
             </div>
         </div>
-
-        <div class="container"></div>
-            <div class="float-row"> 
-                <div class="half-box">...that answers the question & matches the smaller image!<span> <i class="fa-regular fa-hand-point-right"></i></span></div> 
-                <div class="half-box"><img class="rules-pic2" src="assets/images/float_question.png" alt="An explanitory image of a question button and a small picture of a farmyard animal"></div>
-                
-            </div> 
-        </div>
-        
-       <button id="float-button" > Start Game </button>
-        
     </div>
 
     <nav>
         <div class="container">
             <div class="game-menu-row" >
                 <h2 class="nav-link" onclick="soundToggle()"><i id="sound-icon" class="fa-solid fa-volume-xmark"></i>&nbsp Sound: <span id="sound-on-off">OFF</span></h2>
-                <a class="back-link" href="index.html"><h1><i class="fa-solid fa-circle-left"></i>Back to Menu</h1></a>
+                <audio id="back-btn" src="assets/audio/pop.mp3"></audio>
+                <a class="back-link" href="index.html" onclick="playBack()" ><h1><i class="fa-solid fa-circle-left"></i>Back to Menu</h1></a>
                 <h2 class="nav-link" onclick="testToggle()"><i class="fa-solid fa-graduation-cap"></i>&nbsp Test Mode: <span id="test-on-off">OFF</span></h2>
             </div>
         </div>
@@ -70,7 +82,8 @@
         <div class="question-container">
                 <div id="question-row">
                 <div class="q-box">
-                    <button id="question-button">Where is the duck?</button>
+                    <audio id="q-sound" src="assets/audio/animals_btn.mp3"></audio>
+                    <button id="question-button" onclick="qSound();">Where is the animal?</button>
                     <img id="q-thumb" src="assets/images/placeholder.jpeg" alt="A picture of a random farmyard animal">
                 </div> 
                 
@@ -85,14 +98,14 @@
         <div class="center-box">
             <h2> Well Done! </h2>
             <div class="container">
-                <div class="float-row">
+                <div class="modal-row">
                 <img id="float-pic" src="assets/images/placeholder.jpeg" alt="placeholder alt text"  class="congrats-img">
             </div>
             </div>
         
             <div class="container">
                 <H2>That's a marvelous match!</H2>
-                <div class="float-row"> 
+                <div class="modal-row"> 
                     <button id="congrats-button" onclick="playAgain()" > Play Again </button>
                 </div> 
             </div>

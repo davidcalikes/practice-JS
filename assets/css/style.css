@@ -62,10 +62,12 @@ h2 {
 
 
 
-button:hover{ border: 5px solid yellow;
+button:hover { 
+    border: 5px solid yellow;
 }
 
-.box:hover{ border: 5px solid yellow;
+.box:hover { 
+    border: 5px solid yellow;
 }
 
 .logo-container {
@@ -178,18 +180,18 @@ footer p {
 
 /* *** GAME PAGE STYLING *** */
 
-/* Floating element explains how to play and then dissapears on button click */
+/* Modal style element explains how to play and then dissapears on button click */
 
-#float-box {
-    display: none;
+#modal-box {
+    display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 400px;
+    width: 70vw;
+    height: 75vh;
     position: fixed;
     z-index: 999; 
     left: 0; 
     right: 0; 
-    top: 70px;
+    top: 5vh;
     margin-left: auto; 
     margin-right: auto; 
     background-color: rgb(89, 169, 196);
@@ -204,18 +206,26 @@ footer p {
     align-items: center;
 }
 
-.float-row {
+#modal-box h2 {
+    color: #ffffff;
+}
+
+.modal-container {
+    display: block;
+    width: 100%;
+}
+
+.modal-row {
     display: flex;
     width: 100%;
     justify-content: center;
 }
 
-.half-box {
-    width: 50%;
+.modal-unit {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4rem;
 }
 
 .quarter-box {
@@ -231,7 +241,7 @@ footer p {
     border: 3px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 70%;
+    width: 30%;
     line-height: 10px;
     
 }
@@ -241,24 +251,29 @@ footer p {
     border: 3px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 60%;
+    width: 25%;
     line-height: 10px;
     
 }
 
-#float-button {
+#modal-button {
     
     background: rgb(0, 255, 34);
     color: white;
     padding: 20px;
-    width: 14rem;
+    width: 10rem;
     border-radius: 10px;
     border: 5px solid white;
     font-family: Schoolbell, sans-serif;
     font-size: 1.4rem;
-    margin-top: 5%;
+    margin-top: 3%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     
+}
+
+#modal-button:hover {
+    border: 5px solid yellow;
 }
 /* Game Page Navigation Menu & Toggle Switches */
 
@@ -390,7 +405,8 @@ footer p {
     cursor: pointer;
 }
 
-#question-button:hover{ border: 5px solid yellow;
+#question-button:hover { 
+    border: 5px solid yellow;
 }
 
 #q-thumb{ 
@@ -406,7 +422,7 @@ footer p {
 #q-thumb:hover{ border: 5px solid yellow;
 }
 
-/* Floating element that appears on correct answer and disappears on button click */
+/* Modal style element that appears on correct answer and disappears on button click */
 
 #congrats-box {
     display: none;
@@ -460,7 +476,8 @@ footer p {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-#congrats-button:hover { border: 5px solid yellow;
+#congrats-button:hover { 
+    border: 5px solid yellow;
 }
 
 /* *** MEDIA QUERIES *** */
@@ -505,6 +522,14 @@ footer p {
     #play-info {
     margin-left: 14%;
     margin-right: 14%;
+    }
+
+    .rules-pic1 {
+        width: 50%;
+    }
+
+    .rules-pic2 {
+        width: 50%;
     }
 
 }
@@ -556,6 +581,10 @@ footer p {
         .menu-row {
             width: 100%;
             margin-left: 0%;
+        }
+
+        #modal-button {
+            font-size: .8rem;
         }
 
     }
@@ -628,6 +657,10 @@ footer p {
 
         #play-info {
             font-size: 70%;
+        }
+
+        #modal-box {
+            font-size: 85%;
         }
 
     }    
