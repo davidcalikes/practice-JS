@@ -293,6 +293,12 @@ footer p {
     font-size: 100%;
 }
 
+
+.nav-link:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
 /* Main Game Area */
 
 .row {

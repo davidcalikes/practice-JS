@@ -128,6 +128,9 @@ function shuffle(array) {
           }
         }
 
+        makeMatch();
+}
+
 // Creates active flash card that matches thumbnail image and waits for user interaction.       
 function makeMatch() {
       
@@ -171,17 +174,13 @@ function makeMatch() {
       }  
     }
   }
-  
-makeMatch();
 
-}
 
-// Checks the 1st flashcard to see if it is the "active" card that matches the card below.
+// Checks the 1st flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard1 () {
 
   function congratsBox() {
-    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox();
+    let congrats = document.getElementById("congrats-box").style.display = "flex";
   } 
 
   let box1 = document.getElementById("box-1").getAttribute('class');
@@ -199,13 +198,11 @@ function checkCard1 () {
   }
 }
 
-// Checks the 2nd flashcard to see if it is the "active" card that matches the card below.
+// Checks the 2nd flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard2 () {
 
   function congratsBox() {
-    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    
-    congratsBox();
+    let congrats = document.getElementById("congrats-box").style.display = "flex";
   } 
 
   let box2 = document.getElementById("box-2").getAttribute('class');
@@ -223,14 +220,12 @@ function checkCard2 () {
   }
 }
 
-// Checks the 3rd flashcard to see if it is the "active" card that matches the thumbnail card.
+// Checks the 3rd flashcard in response to user click event to see if it is the "active" card that matches the thumbnail card.
 function checkCard3 () {
 
   function congratsBox() {
-    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox();
+    let congrats = document.getElementById("congrats-box").style.display = "flex"; 
   } 
-
   let box3 = document.getElementById("box-3").getAttribute('class');
   
   console.log(box3);
@@ -246,14 +241,11 @@ function checkCard3 () {
   }
 }
 
-runGame();
-
-// Checks the 1st flashcard to see if it is the "active" card that matches the card below.
+// Checks the 4th flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard4 () {
   
   function congratsBox() {
-    let congratsBox = document.getElementById("congrats-box").style.display = "flex";
-    congratsBox();
+    let congrats = document.getElementById("congrats-box").style.display = "flex";
   }  
 
   let box4 = document.getElementById("box-4").getAttribute('class');
@@ -271,6 +263,8 @@ function checkCard4 () {
   }
 }
 
+runGame();
+
 function playAgain() {
   
   document.getElementById("box-1").className = "box";
@@ -280,9 +274,31 @@ function playAgain() {
   
   let congratsBox = document.getElementById("congrats-box").style.display = "none";
   
-  runGame();
+runGame();
 }
 
-function displayQuestion() {
+function soundToggle() {
+  
+  let soundOnOff = document.getElementById("sound-on-off");
+  let soundIcon = document.getElementById("sound-icon");
+  if (soundOnOff.innerHTML === "OFF") {
+      soundOnOff.innerHTML = "ON";
+      soundIcon.className = "fa-solid fa-volume-low";
+      
 
+  } else {
+    soundOnOff.innerHTML = "OFF";
+    soundIcon.className = "fa-solid fa-volume-xmark"
+  }
 }
+
+function testToggle() {
+  
+  let testOnOff = document.getElementById("test-on-off");
+  if (testOnOff.innerHTML === "OFF") {
+      testOnOff.innerHTML = "ON";
+  } else {
+    testOnOff.innerHTML = "OFF";
+  }
+}
+
