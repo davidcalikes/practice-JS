@@ -60,13 +60,7 @@ h2 {
     color: #ffffff;
 }
 
-
-
 button:hover { 
-    border: 5px solid yellow;
-}
-
-.box:hover { 
     border: 5px solid yellow;
 }
 
@@ -341,9 +335,13 @@ footer p {
     border: 5px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 185px;
-    height: 185px;
+    width: 175px;
+    height: 175px;
     cursor: pointer;
+}
+
+.box:hover { 
+    border: 5px solid yellow;
 }
 
 .game-container {
@@ -351,7 +349,7 @@ footer p {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .question-container {
@@ -370,9 +368,14 @@ footer p {
 
 #play-info {
 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #1d5cc9;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
     text-align: center;
-    color: #42526e;
+    color: #ffffff;
     font-family: Schoolbell, sans-serif;
+    border: 3px solid white;
 }
 
 .q-box {
