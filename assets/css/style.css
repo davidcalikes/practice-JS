@@ -44,6 +44,7 @@ h2 {
     padding-bottom: 1%;
     font-size: 90%;
     background-color: #1d5cc9;
+    background-image: url("../images/swirl.png");
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     margin-left: 0%;
     margin-top: 1%;
@@ -190,6 +191,7 @@ footer p {
     margin-left: auto; 
     margin-right: auto; 
     background-color: #1d5cc9;
+    background-image: url("../images/swirl.png");
     padding: 30px;
     border-radius: 10px;
     border: 5px solid white;
@@ -371,6 +373,7 @@ footer p {
 #info-container{
     
     background-color: #1d5cc9;
+    background-image: url("../images/swirl.png");
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 50%);
@@ -409,7 +412,7 @@ footer p {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
-    border: 5px solid white;
+    border: 3px solid white;
     font-family: Schoolbell, sans-serif;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
@@ -424,14 +427,15 @@ footer p {
 #q-thumb{ 
     
     border-radius: 10px;
-    border: 5px solid whitesmoke;
+    border: 3px solid whitesmoke;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     margin-left: 3%;
     width: 92.5px;
     cursor: pointer;
 }
 
-#q-thumb:hover{ border: 5px solid yellow;
+#q-thumb:hover{ 
+    border: 5px solid yellow;
 }
 
 /* Modal style element that appears on correct answer and disappears on button click */
@@ -440,7 +444,7 @@ footer p {
     display: none;
     flex-direction: column;
     width: 70vw;
-    height: 70vh;
+    height: 75vh;
     position: fixed;
     z-index: 999; 
     left: 0; 
@@ -449,6 +453,7 @@ footer p {
     margin-left: auto; 
     margin-right: auto; 
     background-color: #1d5cc9;
+    background-image: url("../images/swirl.png");
     padding: 30px;
     border-radius: 10px;
     border: 5px solid white;
