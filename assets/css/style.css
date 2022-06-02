@@ -53,7 +53,8 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    border: 3px solid white;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
 }
 
 .menu-info-row h2{
@@ -188,7 +189,7 @@ footer p {
     top: 5vh;
     margin-left: auto; 
     margin-right: auto; 
-    background-color: rgb(89, 169, 196);
+    background-color: #1d5cc9;
     padding: 30px;
     border-radius: 10px;
     border: 5px solid white;
@@ -237,6 +238,7 @@ footer p {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     width: 30%;
     line-height: 10px;
+    margin-top: 5%;
     
 }
 
@@ -284,15 +286,14 @@ footer p {
 }
 
 .back-link {
-    text-decoration: none;
-}
-
-.back-link h1 {
     font-size: 200%;
+    padding: 5px;
 }
 
-.back-link h1:hover{
-    color: yellow;
+.back-link:hover{
+    border-radius: 10px;
+    background: yellow;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -300,11 +301,12 @@ footer p {
     color: #42526e;
     font-family: Schoolbell, sans-serif;
     font-size: 100%;
+    padding: 5px;
 }
 
-
 .nav-link:hover{
-    color: yellow;
+    border-radius: 10px;
+    background: yellow;
     cursor: pointer;
 }
 
@@ -446,7 +448,7 @@ footer p {
     top: 5vh;
     margin-left: auto; 
     margin-right: auto; 
-    background-color: rgb(89, 169, 196);
+    background-color: #1d5cc9;
     padding: 30px;
     border-radius: 10px;
     border: 5px solid white;
@@ -574,7 +576,7 @@ footer p {
 
 
     .back-link {
-        font-size: 65%;
+        font-size: 150%;
     }
 
     #play-info {
@@ -611,18 +613,6 @@ footer p {
             font-size: 75%;
         }
 
-        .back-link {
-            font-size: 50%;
-        }
-
-        #sound-link {
-            font-size: 55%;
-        }
-            
-        #mode-link {
-            font-size: 55%;
-        }
-
         .box{
             width: 125px;
             height: 125px;
@@ -652,12 +642,8 @@ footer p {
             font-size: 70%;
         }
 
-        #sound-link {
-            font-size: 50%;
-        }
-            
-        #mode-link {
-            font-size: 50%;
+        .back-link {
+            font-size: 100%;
         }
         
         .box{
