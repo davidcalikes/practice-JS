@@ -380,14 +380,23 @@ footer p {
 }
 
 #play-info {
-
     padding-top: 1%;
     padding-bottom: 1%;
-    
     text-align: center;
     color: #ffffff;
     font-family: Schoolbell, sans-serif;
+    display: block;
     
+}
+
+#score-board {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Schoolbell, sans-serif;
+    display: none;
+
 }
 
 .q-box {

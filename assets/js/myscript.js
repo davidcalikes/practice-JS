@@ -71,8 +71,6 @@ function qSound() {
   sound.play();
 }
 
-
-
 /** 
  * Contains all functions required to run a single game cycle.
  * Including shuffling of Flashcards, creating a matching pair and congratulating the user for a correct answer.
@@ -228,15 +226,24 @@ function checkCard1 () {
 
   let box1 = document.getElementById("box-1").getAttribute('class');
   console.log(box1);
+  let testOnOff = document.getElementById("test-on-off");
   
   const activeBox = "box active";
 
   if (box1 === activeBox) {
   congratsBox();
-  
+  addScore();
+  makeTen();
+
+} else {
+  if (testOnOff.innerHTML === "ON") {
+    makeTen();
+    runGame();
+
   } else {
   console.log("Try again!");
   }
+}
 }
 
 // Checks the 2nd flashcard in response to user click event to see if it is the "active" card that matches the card below.
@@ -248,15 +255,25 @@ function checkCard2 () {
 
   let box2 = document.getElementById("box-2").getAttribute('class');
   console.log(box2);
+  let testOnOff = document.getElementById("test-on-off");
 
   let activeBox = "box active";
 
   if (box2 === activeBox) {
   congratsBox();
+  addScore();
+  makeTen();
+
+} else {
+  if (testOnOff.innerHTML === "ON") {
+    makeTen();
+    runGame();
   
   } else {
   console.log("Try again!");
+  makeTen();
   }
+}
 }
 
 // Checks the 3rd flashcard in response to user click event to see if it is the "active" card that matches the thumbnail card.
@@ -268,15 +285,25 @@ function checkCard3 () {
 
   let box3 = document.getElementById("box-3").getAttribute('class');
   console.log(box3);
+  let testOnOff = document.getElementById("test-on-off");
 
   let activeBox = "box active";
 
   if (box3 === activeBox) {
     congratsBox();
+    addScore();
+    makeTen();
+
+  } else {
+    if (testOnOff.innerHTML === "ON") {
+      makeTen();
+      runGame();
   
   } else {
   console.log("Try again!");
+  makeTen();
   }
+}
 }
 
 // Checks the 4th flashcard in response to user click event to see if it is the "active" card that matches the card below.
@@ -288,15 +315,26 @@ function checkCard4 () {
 
   let box4 = document.getElementById("box-4").getAttribute('class');
   console.log(box4);
+  let testOnOff = document.getElementById("test-on-off");
 
   let activeBox = "box active";
 
   if (box4 === activeBox) {
     congratsBox();
+    addScore();
+    makeTen();
+
+  } else {
+    if (testOnOff.innerHTML === "ON") {
+      makeTen();
+      runGame();
   
   } else {
   console.log("Try again!");
+  makeTen();
+
   }
+}
 }
 
 function playAgain() {
@@ -352,7 +390,6 @@ function soundToggle() {
 }
 
 function testToggle() {
-  
   let testOnOff = document.getElementById("test-on-off");
   if (testOnOff.innerHTML === "OFF") {
       testOnOff.innerHTML = "ON";
@@ -364,6 +401,27 @@ function testToggle() {
 }
  
 function runTest() {
-  let scoreBoard = document.getElementById("play-info").innerHTML ="Correct answers: O / 10"
+  let hidePlayInfo = document.getElementById("play-info").style.display = "none";
+  hidePlayInfo;
+  let showScore = document.getElementById("score-board").style.display = "block";
+  showScore;
+  let resetScore = document.getElementById("add-score").innerHTML = "0";
+  resetScore;
+  let resetAttempts = document.getElementById("attempts").innerHTML = "0";
+  resetScore;
 }
 
+function addScore() {
+  let getScore = parseInt(document.getElementById("add-score").innerText);
+  document.getElementById("add-score").innerText = ++getScore;
+
+}
+
+function makeTen() {
+  let testAttempts = parseInt(document.getElementById("attempts").innerText);
+  document.getElementById("attempts").innerText = ++testAttempts;
+}
+
+function endTest() {
+      
+}
