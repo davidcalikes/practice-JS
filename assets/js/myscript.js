@@ -10,8 +10,8 @@ function setToggle() {
 } else {
   if (sndToggleState === "OFF") {
   muteAudio();
-}
-}
+    }
+  }
 }
 
 // Mutes all Audio elements on page //
@@ -21,12 +21,6 @@ for (const sound of sounds)
   sound.muted = true 
 }
 
-function unMuteAudio() { 
-  const sounds = document.querySelectorAll("audio");
-  for (const sound of sounds)
-    sound.muted = false 
-  }
-
 // Plays animals button sound when button is clicked and loads animals game page //
 function playAnimals() {
   let sound = document.getElementById("animals");
@@ -35,6 +29,7 @@ function playAnimals() {
     location.href = 'animals.html';
   });
 }
+
 // Plays shapes button sound when button is clicked and loads shapes game page //
 function playShapes() {
   let sound = document.getElementById("shapes");
@@ -219,6 +214,11 @@ function makeMatch() {
 
 // Checks the 1st flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard1 () {
+  let maxAttempts = document.getElementById("attempts").innerHTML;
+  
+  if (maxAttempts === "10") {
+    endTest();
+  }
 
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
@@ -248,6 +248,11 @@ function checkCard1 () {
 
 // Checks the 2nd flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard2 () {
+  let maxAttempts = document.getElementById("attempts").innerHTML;
+  
+  if (maxAttempts === "10") {
+    endTest();
+  }
 
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
@@ -278,6 +283,11 @@ function checkCard2 () {
 
 // Checks the 3rd flashcard in response to user click event to see if it is the "active" card that matches the thumbnail card.
 function checkCard3 () {
+  let maxAttempts = document.getElementById("attempts").innerHTML;
+  
+  if (maxAttempts === "10") {
+    endTest();
+  }
 
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex"; 
@@ -308,6 +318,11 @@ function checkCard3 () {
 
 // Checks the 4th flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard4 () {
+  let maxAttempts = document.getElementById("attempts").innerHTML;
+  
+  if (maxAttempts === "10") {
+    endTest();
+  }
   
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
@@ -423,5 +438,6 @@ function makeTen() {
 }
 
 function endTest() {
-      
+  const endModal = document.getElementById("end-test").style.display = "flex";
+  endModal; 
 }

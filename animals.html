@@ -115,7 +115,30 @@
                 </div> 
             </div>
         </div> 
-    </div>    
+    </div>
+
+    <!-- An alert-style box that displays a message containing the users final score out of 10 after the maximum attempts limit has been reached. Returns to game menu or resets the test game on button click. -->
+
+    <div id="end-test">
+        <div class="center-box">
+            <h2>Well Done!</h2>
+            
+        
+            <div class="container">
+                <H2>You got...</H2>
+                <H2><span id="final-score"></span> / 10 </H2>
+                <div class="modal-row"> 
+                    <button id="end-test-button" onclick="newTest()" > New Test  </button>
+                </div> 
+            </div>
+
+            <div class="container">
+                <div class="modal-row"> 
+                    <button id= "back-button" onclick="playBack()" > Game Menu </button>
+                </div> 
+            </div>
+        </div> 
+    </div> 
     
     <!-- The Footer Section-->
     
