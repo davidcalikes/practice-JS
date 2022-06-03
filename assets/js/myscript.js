@@ -1,8 +1,31 @@
-// Mutes Page Audio as default setting //
-const sounds = document.querySelectorAll("audio");
-for (const sound of sounds) {
-sound.muted = true
+let sndToggleState = localStorage.getItem("toggle")
+      console.log("Sound =",sndToggleState);
+
+setToggle();
+
+function setToggle() {
+  if (sndToggleState === "ON") {
+  soundToggle();
+
+} else {
+  if (sndToggleState === "OFF") {
+  muteAudio();
 }
+}
+}
+
+// Mutes all Audio elements on page //
+function muteAudio() {
+const sounds = document.querySelectorAll("audio");
+for (const sound of sounds)
+  sound.muted = true 
+}
+
+function unMuteAudio() { 
+  const sounds = document.querySelectorAll("audio");
+  for (const sound of sounds)
+    sound.muted = false 
+  }
 
 // Plays animals button sound when button is clicked and loads animals game page //
 function playAnimals() {
@@ -206,7 +229,7 @@ function checkCard1 () {
   let box1 = document.getElementById("box-1").getAttribute('class');
   console.log(box1);
   
-  let activeBox = "box active";
+  const activeBox = "box active";
 
   if (box1 === activeBox) {
   congratsBox();
@@ -301,7 +324,6 @@ runGame();
 }
 
 function soundToggle() {
-  
   let soundOnOff = document.getElementById("sound-on-off");
   let soundIcon = document.getElementById("sound-icon");
   
@@ -311,7 +333,10 @@ function soundToggle() {
       const sounds = document.querySelectorAll("audio");
       for (const sound of sounds) {
       sound.muted = false;
-      }
+      localStorage.setItem("toggle", "ON");
+      let sndToggleState = localStorage.getItem("toggle")
+      console.log("Sound =",sndToggleState);
+    }
       
   } else {
     soundOnOff.innerHTML = "OFF";
@@ -319,9 +344,11 @@ function soundToggle() {
     const sounds = document.querySelectorAll("audio");
     for (const sound of sounds) {
     sound.muted = true;
-}
-
-}
+    localStorage.setItem("toggle", "OFF");
+    sndToggleState = localStorage.getItem("toggle")
+    console.log("Sound =",sndToggleState)
+    }
+  }
 }
 
 function testToggle() {
@@ -329,13 +356,14 @@ function testToggle() {
   let testOnOff = document.getElementById("test-on-off");
   if (testOnOff.innerHTML === "OFF") {
       testOnOff.innerHTML = "ON";
+      runTest();
   } else {
     testOnOff.innerHTML = "OFF";
+    document.location.reload();
   }
 }
-
+ 
 function runTest() {
-
-  let scoreBoard = document.getElementById()
+  let scoreBoard = document.getElementById("play-info").innerHTML ="Correct answers: O / 10"
 }
 

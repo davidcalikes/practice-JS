@@ -421,7 +421,7 @@ footer p {
 }
 
 #question-button:hover { 
-    border: 5px solid yellow;
+    border: 3px solid yellow;
 }
 
 #q-thumb{ 
@@ -435,7 +435,7 @@ footer p {
 }
 
 #q-thumb:hover{ 
-    border: 5px solid yellow;
+    border: 3px solid yellow;
 }
 
 /* Modal style element that appears on correct answer and disappears on button click */
