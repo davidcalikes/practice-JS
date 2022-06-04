@@ -231,11 +231,11 @@ function checkCard1 () {
   if (box1 === activeBox) {
   congratsBox();
   addScore();
-  makeTen();
+  addAttempt();
 
 } else {
   if (testOnOff.innerHTML === "ON") {
-    makeTen();
+    addAttempt();
     runGame();
     tenCheck();
 
@@ -262,17 +262,17 @@ function checkCard2 () {
   if (box2 === activeBox) {
   congratsBox();
   addScore();
-  makeTen();
+  addAttempt();
 
 } else {
   if (testOnOff.innerHTML === "ON") {
-    makeTen();
+    addAttempt();
     runGame();
     tenCheck();
   
   } else {
   console.log("Try again!");
-  makeTen();
+  addAttempt();
   }
 }
 }
@@ -293,17 +293,17 @@ function checkCard3 () {
   if (box3 === activeBox) {
     congratsBox();
     addScore();
-    makeTen();
+    addAttempt();
 
   } else {
     if (testOnOff.innerHTML === "ON") {
-      makeTen();
+      addAttempt();
       runGame();
       tenCheck();
   
   } else {
   console.log("Try again!");
-  makeTen();
+  addAttempt();
   }
 }
 }
@@ -324,17 +324,17 @@ function checkCard4 () {
   if (box4 === activeBox) {
     congratsBox();
     addScore();
-    makeTen();
+    addAttempt();
 
   } else {
     if (testOnOff.innerHTML === "ON") {
-      makeTen();
+      addAttempt();
       runGame();
       tenCheck();
   
   } else {
   console.log("Try again!");
-  makeTen();
+  addAttempt();
 
   }
 }
@@ -362,7 +362,7 @@ function startGame() {
   document.getElementById("box-4").className = "box";
   
   let modal = document.getElementById("modal-box").style.display = "none";
-  
+  modal;
 runGame();
 }
 
@@ -409,6 +409,12 @@ function testToggle() {
 }
  
 function runTest() {
+  
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  
   let hidePlayInfo = document.getElementById("play-info").style.display = "none";
   hidePlayInfo;
   let showScore = document.getElementById("score-board").style.display = "block";
@@ -424,10 +430,9 @@ function runTest() {
 function addScore() {
   let getScore = parseInt(document.getElementById("add-score").innerText);
   document.getElementById("add-score").innerText = ++getScore;
-
 }
 
-function makeTen() {
+function addAttempt() {
   let testAttempts = parseInt(document.getElementById("attempts").innerText);
   document.getElementById("attempts").innerText = ++testAttempts;
 }
@@ -435,10 +440,10 @@ function makeTen() {
 function endTest() {
   const endModal = document.getElementById("end-test").style.display = "flex";
   endModal;
+
   const getFinalScr = document.getElementById("add-score").innerText;
-  console.log(getFinalScr)
+  console.log("Final Score =",getFinalScr,"/10")
   const dspFinalScr = document.getElementById("final-score").innerHTML = getFinalScr;
-  console.log(dspFinalScr)
 }
 
 function tenCheck() {

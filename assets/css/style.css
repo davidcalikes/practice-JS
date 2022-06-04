@@ -151,6 +151,10 @@ button i {
     cursor: pointer;
 }
 
+#sound-state{
+    display: none;
+}
+
 /* Footer Section Styleing*/
 
 .footer-window {
@@ -544,7 +548,6 @@ footer p {
     color: #ffffff;
 }
 
-
 .end-test-img {
     
     border-radius: 10px;
@@ -585,7 +588,6 @@ footer p {
     margin-top: 5%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 #end-test-button:hover { 
     border: 5px solid yellow;
