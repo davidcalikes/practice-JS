@@ -38,6 +38,7 @@ function playShapes() {
     location.href = 'shapes.html';
   });
 }
+
 // Plays colours button sound when button is clicked and loads colours game page //
 function playColours() {
   let sound = document.getElementById("colours");
@@ -46,6 +47,7 @@ function playColours() {
     location.href = 'colours.html';
   });
 }
+
 // Plays pop button sound when button is clicked and returns to menu page //
 function playBack() {
   let sound = document.getElementById("back-btn");
@@ -54,6 +56,7 @@ function playBack() {
     location.href = "index.html";
   });
 }
+
 // Plays pop button sound when button is clicked //
 function playStart() {
   let sound = document.getElementById("start-btn");
@@ -112,47 +115,47 @@ function shuffle(array) {
     // Uses quizzPic variable to duplicate image to floating congratsBox element"
     document.getElementById("float-pic").src = quizPic;
     
-     let question = document.getElementById("question-button").innerHTML;
+     let question = document.getElementById("question-txt").innerHTML;
 
          if (quizPic === "assets/images/sheep.png") {
-           document.getElementById("question-button").innerHTML = "Where is the sheep?";
+           document.getElementById("question-txt").innerHTML = "Where is the sheep?";
            document.getElementById("q-sound").src = "assets/audio/q_sheep.mp3";
          
           } else {
 
          if (quizPic === "assets/images/duck.png") {
-          document.getElementById("question-button").innerHTML = "Where is the duck?";
+          document.getElementById("question-txt").innerHTML = "Where is the duck?";
           document.getElementById("q-sound").src = "assets/audio/q_duck.mp3";
         } else {
 
           if (quizPic === "assets/images/horse.png") {
-           document.getElementById("question-button").innerHTML = "Where is the horse?";
+           document.getElementById("question-txt").innerHTML = "Where is the horse?";
            document.getElementById("q-sound").src = "assets/audio/q_horse.mp3";
           } else {
 
             if (quizPic === "assets/images/pig.png") {
-             document.getElementById("question-button").innerHTML = "Where is the pig?";
+             document.getElementById("question-txt").innerHTML = "Where is the pig?";
              document.getElementById("q-sound").src = "assets/audio/q_pig.mp3";
           } else {
 
               if (quizPic === "assets/images/rooster.png") {
-               document.getElementById("question-button").innerHTML = "Where is the rooster?";
+               document.getElementById("question-txt").innerHTML = "Where is the rooster?";
                document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
           } else {
 
                 if (quizPic === "assets/images/cat.png") {
-                 document.getElementById("question-button").innerHTML = "Where is the cat?";     
+                 document.getElementById("question-txt").innerHTML = "Where is the cat?";     
                  document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
                 } else {
 
                   if (quizPic === "assets/images/dog.png") {
-                   document.getElementById("question-button").innerHTML = "Where is the dog?";
+                   document.getElementById("question-txt").innerHTML = "Where is the dog?";
                    document.getElementById("q-sound").src = "assets/audio/q_dog.mp3";
                 
                   } else {
 
                     if (quizPic === "assets/images/cow.png") {
-                     document.getElementById("question-button").innerHTML = "Where is the cow?";
+                     document.getElementById("question-txt").innerHTML = "Where is the cow?";
                      document.getElementById("q-sound").src = "assets/audio/q_cow.mp3";
                     }
 
@@ -214,12 +217,7 @@ function makeMatch() {
 
 // Checks the 1st flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard1 () {
-  let maxAttempts = document.getElementById("attempts").innerHTML;
   
-  if (maxAttempts === "10") {
-    endTest();
-  }
-
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
   } 
@@ -239,20 +237,17 @@ function checkCard1 () {
   if (testOnOff.innerHTML === "ON") {
     makeTen();
     runGame();
+    tenCheck();
 
   } else {
   console.log("Try again!");
-  }
+  }     
+ }
 }
-}
+
 
 // Checks the 2nd flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard2 () {
-  let maxAttempts = document.getElementById("attempts").innerHTML;
-  
-  if (maxAttempts === "10") {
-    endTest();
-  }
 
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
@@ -273,6 +268,7 @@ function checkCard2 () {
   if (testOnOff.innerHTML === "ON") {
     makeTen();
     runGame();
+    tenCheck();
   
   } else {
   console.log("Try again!");
@@ -283,11 +279,6 @@ function checkCard2 () {
 
 // Checks the 3rd flashcard in response to user click event to see if it is the "active" card that matches the thumbnail card.
 function checkCard3 () {
-  let maxAttempts = document.getElementById("attempts").innerHTML;
-  
-  if (maxAttempts === "10") {
-    endTest();
-  }
 
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex"; 
@@ -308,6 +299,7 @@ function checkCard3 () {
     if (testOnOff.innerHTML === "ON") {
       makeTen();
       runGame();
+      tenCheck();
   
   } else {
   console.log("Try again!");
@@ -318,11 +310,6 @@ function checkCard3 () {
 
 // Checks the 4th flashcard in response to user click event to see if it is the "active" card that matches the card below.
 function checkCard4 () {
-  let maxAttempts = document.getElementById("attempts").innerHTML;
-  
-  if (maxAttempts === "10") {
-    endTest();
-  }
   
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
@@ -343,6 +330,7 @@ function checkCard4 () {
     if (testOnOff.innerHTML === "ON") {
       makeTen();
       runGame();
+      tenCheck();
   
   } else {
   console.log("Try again!");
@@ -353,7 +341,9 @@ function checkCard4 () {
 }
 
 function playAgain() {
-  
+
+  tenCheck();
+
   document.getElementById("box-1").className = "box";
   document.getElementById("box-2").className = "box";
   document.getElementById("box-3").className = "box";
@@ -379,10 +369,12 @@ runGame();
 function soundToggle() {
   let soundOnOff = document.getElementById("sound-on-off");
   let soundIcon = document.getElementById("sound-icon");
+  let sndBtnIcon = document.getElementById("snd-btn-icon");
   
   if (soundOnOff.innerHTML === "OFF") {
       soundOnOff.innerHTML = "ON";
       soundIcon.className = "fa-solid fa-volume-low";
+      sndBtnIcon.className = "fa-solid fa-volume-low";
       const sounds = document.querySelectorAll("audio");
       for (const sound of sounds) {
       sound.muted = false;
@@ -393,7 +385,8 @@ function soundToggle() {
       
   } else {
     soundOnOff.innerHTML = "OFF";
-    soundIcon.className = "fa-solid fa-volume-xmark"
+    soundIcon.className = "fa-solid fa-volume-xmark";
+    sndBtnIcon.className = "fa-solid fa-volume-xmark";
     const sounds = document.querySelectorAll("audio");
     for (const sound of sounds) {
     sound.muted = true;
@@ -420,10 +413,12 @@ function runTest() {
   hidePlayInfo;
   let showScore = document.getElementById("score-board").style.display = "block";
   showScore;
+  let hideTestModal = document.getElementById("end-test").style.display = "none";
+  hideTestModal;
   let resetScore = document.getElementById("add-score").innerHTML = "0";
   resetScore;
   let resetAttempts = document.getElementById("attempts").innerHTML = "0";
-  resetScore;
+  resetAttempts;
 }
 
 function addScore() {
@@ -439,5 +434,16 @@ function makeTen() {
 
 function endTest() {
   const endModal = document.getElementById("end-test").style.display = "flex";
-  endModal; 
+  endModal;
+  const getFinalScr = document.getElementById("add-score").innerText;
+  console.log(getFinalScr)
+  const dspFinalScr = document.getElementById("final-score").innerHTML = getFinalScr;
+  console.log(dspFinalScr)
+}
+
+function tenCheck() {
+  let maxAttempts = document.getElementById("attempts").innerHTML;
+  if (maxAttempts === "10") {
+    endTest();
+  }
 }

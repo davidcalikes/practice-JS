@@ -557,7 +557,7 @@ footer p {
 
 #back-button {
     
-    background: rgb(0, 255, 34);
+    background: rgb(255, 196, 0);
     color: white;
     padding: 20px;
     width: 14rem;
@@ -574,7 +574,7 @@ footer p {
 }
 
 #end-test-button {
-    background: rgb(0, 255, 34);
+    background: rgb(217, 0, 255);
     color: white;
     padding: 20px;
     width: 14rem;

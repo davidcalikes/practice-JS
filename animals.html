@@ -88,7 +88,7 @@
                 <div id="question-row">
                 <div class="q-box">
                     <audio id="q-sound" src="assets/audio/animals_btn.mp3"></audio>
-                    <button id="question-button" onclick="qSound();">Where is the animal?</button>
+                    <button id="question-button" onclick="qSound();"> <p id="question-txt"> Where is the animal?</p><i id="snd-btn-icon" class="fa-solid fa-volume-xmark"></i></button>
                     <img id="q-thumb" src="assets/images/placeholder.jpeg" alt="A picture of a random farmyard animal">
                 </div> 
                 
@@ -126,15 +126,15 @@
         
             <div class="container">
                 <H2>You got...</H2>
-                <H2><span id="final-score"></span> / 10 </H2>
+                <H2><span id="final-score">0</span> / 10 </H2>
                 <div class="modal-row"> 
-                    <button id="end-test-button" onclick="newTest()" > New Test  </button>
+                    <button id="end-test-button" onclick="runTest()" > New Test  </button>
                 </div> 
             </div>
 
             <div class="container">
                 <div class="modal-row"> 
-                    <button id= "back-button" onclick="playBack()" > Game Menu </button>
+                    <button id="back-button" onclick="playBack()" > Game Menu </button>
                 </div> 
             </div>
         </div> 
