@@ -109,54 +109,61 @@ function shuffle(array) {
      document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
     
     let quizPic = document.getElementById("q-thumb").getAttribute('src');
-    
     console.log(quizPic);
 
     // Uses quizzPic variable to duplicate image to floating congratsBox element"
     document.getElementById("float-pic").src = quizPic;
     
      let question = document.getElementById("question-txt").innerHTML;
+     question;
 
          if (quizPic === "assets/images/sheep.png") {
            document.getElementById("question-txt").innerHTML = "Where is the sheep?";
            document.getElementById("q-sound").src = "assets/audio/q_sheep.mp3";
+           document.getElementById("thumb-sound").src = "assets/audio/thumb_sheep.mp3";
          
           } else {
 
          if (quizPic === "assets/images/duck.png") {
           document.getElementById("question-txt").innerHTML = "Where is the duck?";
           document.getElementById("q-sound").src = "assets/audio/q_duck.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_duck.mp3";
         } else {
 
           if (quizPic === "assets/images/horse.png") {
            document.getElementById("question-txt").innerHTML = "Where is the horse?";
            document.getElementById("q-sound").src = "assets/audio/q_horse.mp3";
+           document.getElementById("thumb-sound").src = "assets/audio/thumb_horse.mp3";
           } else {
 
             if (quizPic === "assets/images/pig.png") {
              document.getElementById("question-txt").innerHTML = "Where is the pig?";
              document.getElementById("q-sound").src = "assets/audio/q_pig.mp3";
+             document.getElementById("thumb-sound").src = "assets/audio/thumb_pig.mp3";
           } else {
 
               if (quizPic === "assets/images/rooster.png") {
                document.getElementById("question-txt").innerHTML = "Where is the rooster?";
                document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
+               document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
           } else {
 
                 if (quizPic === "assets/images/cat.png") {
                  document.getElementById("question-txt").innerHTML = "Where is the cat?";     
                  document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
+                 document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
                 } else {
 
                   if (quizPic === "assets/images/dog.png") {
                    document.getElementById("question-txt").innerHTML = "Where is the dog?";
                    document.getElementById("q-sound").src = "assets/audio/q_dog.mp3";
-                
+                   document.getElementById("thumb-sound").src = "assets/audio/thumb_dog.mp3";
                   } else {
 
                     if (quizPic === "assets/images/cow.png") {
                      document.getElementById("question-txt").innerHTML = "Where is the cow?";
                      document.getElementById("q-sound").src = "assets/audio/q_cow.mp3";
+                     document.getElementById("thumb-sound").src = "assets/audio/thumb_cow.mp3";
                     }
 
                     }
@@ -220,6 +227,7 @@ function checkCard1 () {
   
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
+  congrats;
   } 
 
   let box1 = document.getElementById("box-1").getAttribute('class');
@@ -251,6 +259,7 @@ function checkCard2 () {
 
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
+  congrats;
   } 
 
   let box2 = document.getElementById("box-2").getAttribute('class');
@@ -281,7 +290,8 @@ function checkCard2 () {
 function checkCard3 () {
 
   function congratsBox() {
-  let congrats = document.getElementById("congrats-box").style.display = "flex"; 
+  let congrats = document.getElementById("congrats-box").style.display = "flex";
+  congrats;
   } 
 
   let box3 = document.getElementById("box-3").getAttribute('class');
@@ -313,6 +323,7 @@ function checkCard4 () {
   
   function congratsBox() {
   let congrats = document.getElementById("congrats-box").style.display = "flex";
+  congrats;
   }  
 
   let box4 = document.getElementById("box-4").getAttribute('class');
@@ -350,7 +361,7 @@ function playAgain() {
   document.getElementById("box-4").className = "box";
   
   let congratsBox = document.getElementById("congrats-box").style.display = "none";
-  
+  congratsBox;
 runGame();
 }
 
@@ -401,6 +412,7 @@ function testToggle() {
   let testOnOff = document.getElementById("test-on-off");
   if (testOnOff.innerHTML === "OFF") {
       testOnOff.innerHTML = "ON";
+      console.log("Test Mode Activated")
       runTest();
   } else {
     testOnOff.innerHTML = "OFF";
@@ -444,11 +456,19 @@ function endTest() {
   const getFinalScr = document.getElementById("add-score").innerText;
   console.log("Final Score =",getFinalScr,"/10")
   const dspFinalScr = document.getElementById("final-score").innerHTML = getFinalScr;
+  dspFinalScr;
 }
 
 function tenCheck() {
-  let maxAttempts = document.getElementById("attempts").innerHTML;
-  if (maxAttempts === "10") {
+  const maxAttempts = document.getElementById("attempts").innerHTML;
+  const testState = document.getElementById("test-on-off");
+  if (maxAttempts === "10" && testState.innerHTML === "ON") {
     endTest();
   }
 }
+
+function thumbSound() {
+  const thumbSound = document.getElementById("thumb-sound");
+  thumbSound;
+  thumbSound.play();
+  }
