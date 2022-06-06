@@ -248,6 +248,7 @@ function checkCard1 () {
     tenCheck();
 
   } else {
+  document.getElementById("box-1").src = "assets/images/try_again.png";
   console.log("Try again!");
   }     
  }
@@ -281,7 +282,7 @@ function checkCard2 () {
   
   } else {
   console.log("Try again!");
-  addAttempt();
+  document.getElementById("box-2").src = "assets/images/try_again.png";
   }
 }
 }
@@ -313,7 +314,7 @@ function checkCard3 () {
   
   } else {
   console.log("Try again!");
-  addAttempt();
+  document.getElementById("box-3").src = "assets/images/try_again.png";
   }
 }
 }
@@ -345,7 +346,7 @@ function checkCard4 () {
   
   } else {
   console.log("Try again!");
-  addAttempt();
+  document.getElementById("box-4").src = "assets/images/try_again.png";
 
   }
 }

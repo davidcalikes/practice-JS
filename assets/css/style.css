@@ -247,7 +247,7 @@ footer p {
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
     width: 30%;
     line-height: 10px;
-    margin-top: 5%;
+    margin-top: 3%;
     
 }
 
@@ -263,7 +263,8 @@ footer p {
 
 #modal-button {
     
-    background: rgb(0, 255, 34);
+    background-color:  orangered;
+    background-image: url(../images/carbon.png);
     color: white;
     padding: 20px;
     width: 10rem;
@@ -420,8 +421,8 @@ footer p {
 }
 
 #question-button {
-    
-    background: orangered;
+    background-color:  orangered;
+    background-image: url(../images/carbon.png);
     color: white;
     padding-left: 30px;
     padding-right: 30px;
@@ -519,8 +520,8 @@ footer p {
 }
 
 #congrats-button {
-    
-    background: rgb(0, 255, 34);
+    background-color:  red;
+    background-image: url(../images/carbon.png);
     color: white;
     padding: 20px;
     width: 14rem;
@@ -581,8 +582,8 @@ footer p {
 }
 
 #back-button {
-    
-    background: rgb(255, 196, 0);
+    background-color:  purple;
+    background-image: url(../images/carbon.png);
     color: white;
     padding: 20px;
     width: 14rem;
@@ -599,7 +600,8 @@ footer p {
 }
 
 #end-test-button {
-    background: rgb(217, 0, 255);
+    background-color:  red;
+    background-image: url(../images/carbon.png);
     color: white;
     padding: 20px;
     width: 14rem;
