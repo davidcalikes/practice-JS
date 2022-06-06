@@ -80,31 +80,12 @@ function qSound() {
 }
 
 /** 
- * Contains all functions required to run a single game cycle.
+ * Contains all functions required to run the animals game a single game cycle.
  * Including shuffling of Flashcards, creating a matching pair and congratulating the user for a correct answer.
  * Includes functions that provides the user audio and visual feedback.  
  * */
 function runGame() {
 
-/**
- * Returns random elements from array using Fisher-Yates Shuffle Algorithm. 
- * (Credit: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
- */
-function shuffle(array) {
-     let currentIndex = array.length,  randomIndex;
-   
-     while (currentIndex != 0) {
-   
-       randomIndex = Math.floor(Math.random() * currentIndex);
-       currentIndex--;
-   
-       [array[currentIndex], array[randomIndex]] = 
-       [array[randomIndex], array[currentIndex]];
-     }
-   
-     return array;
-   }
-   
    // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders.
    let animals = ["assets/images/cat.png","assets/images/dog.png","assets/images/pig.png","assets/images/horse.png","assets/images/sheep.png","assets/images/cow.png","assets/images/duck.png","assets/images/rooster.png"];
    shuffle(animals);
@@ -185,6 +166,82 @@ function shuffle(array) {
         }
 
         makeMatch();
+}
+
+/** 
+ * Contains all functions required to run the animals game a single game cycle.
+ * Including shuffling of Flashcards, creating a matching pair and congratulating the user for a correct answer.
+ * Includes functions that provides the user audio and visual feedback.  
+ * */
+ function runGame2() {
+
+  // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders.
+  let colours = ["assets/images/square.png","assets/images/circle.png","assets/images/oval.png","assets/images/star.png","assets/images/rectangle.png","assets/images/triangle.png"];
+  shuffle(colours);
+
+    document.getElementById("box-1").src = colours[0];
+    document.getElementById("box-2").src = colours[1];
+    document.getElementById("box-3").src = colours[2];
+    document.getElementById("box-4").src = colours[3];
+
+    let quizList = colours.slice(0,4);
+
+    document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
+   
+   let quizPic = document.getElementById("q-thumb").getAttribute('src');
+   console.log(quizPic);
+
+   // Uses quizzPic variable to duplicate image to floating congratsBox element"
+   document.getElementById("float-pic").src = quizPic;
+   
+    let question = document.getElementById("question-txt").innerHTML;
+    question;
+
+        if (quizPic === "assets/images/test.png") {
+          document.getElementById("question-txt").innerHTML = "Where is the triangle?";
+          document.getElementById("q-sound").src = "assets/audio/q_sheep.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_sheep.mp3";
+        
+         } else {
+
+        if (quizPic === "assets/images/circle.png") {
+         document.getElementById("question-txt").innerHTML = "Where is the circle ?";
+         document.getElementById("q-sound").src = "assets/audio/q_duck.mp3";
+         document.getElementById("thumb-sound").src = "assets/audio/thumb_duck.mp3";
+       } else {
+
+         if (quizPic === "assets/images/square.png") {
+          document.getElementById("question-txt").innerHTML = "Where is the square?";
+          document.getElementById("q-sound").src = "assets/audio/q_horse.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_horse.mp3";
+         } else {
+
+           if (quizPic === "assets/images/oval.png") {
+            document.getElementById("question-txt").innerHTML = "Where is the oval?";
+            document.getElementById("q-sound").src = "assets/audio/q_pig.mp3";
+            document.getElementById("thumb-sound").src = "assets/audio/thumb_pig.mp3";
+         } else {
+
+             if (quizPic === "assets/images/rectangle.png") {
+              document.getElementById("question-txt").innerHTML = "Where is the rectangle?";
+              document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
+              document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
+         } else {
+
+               if (quizPic === "assets/images/star.png") {
+                document.getElementById("question-txt").innerHTML = "Where is the star?";     
+                document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
+                document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
+               } else {
+                   
+             }
+          }
+        }
+      }
+    }
+   }
+
+       makeMatch();
 }
 
 // Creates active flash card that matches thumbnail image and waits for user interaction.       
@@ -391,6 +448,21 @@ function playAgain() {
   runGame();
 }
 
+function playAgain2() {
+
+  tenCheck();
+
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  
+  let congratsBox = document.getElementById("congrats-box").style.display = "none";
+  congratsBox;
+  hideHint();
+  runGame2();
+}
+
 function startGame() {
   
   document.getElementById("box-1").className = "box";
@@ -401,6 +473,18 @@ function startGame() {
   let modal = document.getElementById("modal-box").style.display = "none";
   modal;
 runGame();
+}
+
+function startGame2() {
+  
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  
+  let modal = document.getElementById("modal-box").style.display = "none";
+  modal;
+runGame2();
 }
 
 function soundToggle() {
@@ -507,4 +591,36 @@ function thumbHint() {
 function hideHint() {
   const hideHint = document.getElementById("thumb-hint").style.display = "none";
   hideHint;
+}
+
+/**
+ * Returns random elements from array using Fisher-Yates Shuffle Algorithm. 
+ * (Credit: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+ */
+ function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  while (currentIndex != 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = 
+    [array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+function chkGame() {
+  let gameType = document.getElementById("game-type").innerHTML
+
+  if (gameType === "Animals") {
+  runGame();
+
+}else{
+  if (gameType === "Shapes"){
+  runGame2
+}
+}
 }
