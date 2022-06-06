@@ -438,6 +438,8 @@ function runTest() {
   resetScore;
   let resetAttempts = document.getElementById("attempts").innerHTML = "0";
   resetAttempts;
+
+  makeMatch();
 }
 
 function addScore() {

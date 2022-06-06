@@ -740,6 +740,10 @@ footer p {
         #q-thumb {
             width: 62.5px;
         }
+        
+        #thumb-hunt {
+            width: 62.5px;
+        }
 
         .back-link h1 {
             font-size: 175%;
@@ -771,6 +775,10 @@ footer p {
         }
 
         #q-thumb {
+            width: 50px;
+        }
+
+        #thumb-hunt {
             width: 50px;
         }
 
