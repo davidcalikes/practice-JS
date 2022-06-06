@@ -249,7 +249,7 @@ footer p {
     border: 3px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 50%;
+    width: 30%;
     line-height: 10px;
     margin-top: 3%;
     
@@ -260,7 +260,7 @@ footer p {
     border: 3px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 50%;
+    width: 30%;
     line-height: 10px;
     
 }
@@ -645,6 +645,14 @@ footer p {
     margin-left: 25%;
     margin-right: 25%;
     }
+
+    .rules-pic1 {
+        width: 50%;
+    }
+
+    .rules-pic2 {
+        width: 50%;
+    }
     
 }
 
@@ -663,16 +671,7 @@ footer p {
     #play-info {
     margin-left: 14%;
     margin-right: 14%;
-    }
-
-    .rules-pic1 {
-        width: 50%;
-    }
-
-    .rules-pic2 {
-        width: 50%;
-    }
-
+    }   
 }
 
 @media screen and (max-width: 700px) {
