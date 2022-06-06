@@ -63,6 +63,16 @@ function playStart() {
   sound.play();
 }
 
+function playRight() {
+  const correct = document.getElementById("correct-sound");
+  correct.play();
+}
+
+function playWrong () {
+  const incorrect = document.getElementById("incorrect-sound");
+  incorrect.play();
+}
+    
 // Plays pop button sound when button is clicked //
 function qSound() {
   let sound = document.getElementById("q-sound");
@@ -237,18 +247,22 @@ function checkCard1 () {
   const activeBox = "box active";
 
   if (box1 === activeBox) {
+  playRight();
   congratsBox();
   addScore();
   addAttempt();
+  
 
 } else {
   if (testOnOff.innerHTML === "ON") {
     addAttempt();
     runGame();
     tenCheck();
+    playWrong();
 
   } else {
   document.getElementById("box-1").src = "assets/images/try_again.png";
+  playWrong();
   console.log("Try again!");
   }     
  }
@@ -270,6 +284,7 @@ function checkCard2 () {
   let activeBox = "box active";
 
   if (box2 === activeBox) {
+  playRight();
   congratsBox();
   addScore();
   addAttempt();
@@ -279,10 +294,12 @@ function checkCard2 () {
     addAttempt();
     runGame();
     tenCheck();
+    playWrong();
   
   } else {
   console.log("Try again!");
   document.getElementById("box-2").src = "assets/images/try_again.png";
+  playWrong();
   }
 }
 }
@@ -302,6 +319,7 @@ function checkCard3 () {
   let activeBox = "box active";
 
   if (box3 === activeBox) {
+    playRight();
     congratsBox();
     addScore();
     addAttempt();
@@ -311,10 +329,12 @@ function checkCard3 () {
       addAttempt();
       runGame();
       tenCheck();
+      playWrong();
   
   } else {
   console.log("Try again!");
   document.getElementById("box-3").src = "assets/images/try_again.png";
+  playWrong();
   }
 }
 }
@@ -334,19 +354,23 @@ function checkCard4 () {
   let activeBox = "box active";
 
   if (box4 === activeBox) {
+    playRight();
     congratsBox();
     addScore();
     addAttempt();
+   
 
   } else {
     if (testOnOff.innerHTML === "ON") {
       addAttempt();
       runGame();
       tenCheck();
+      playWrong();
   
   } else {
   console.log("Try again!");
   document.getElementById("box-4").src = "assets/images/try_again.png";
+  playWrong();
 
   }
 }
