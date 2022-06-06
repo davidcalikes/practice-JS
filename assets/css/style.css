@@ -158,6 +158,10 @@ button i {
     display: none;
 }
 
+.button-spacer {
+    margin-left: 3%;
+}
+
 /* Footer Section Styleing*/
 
 .footer-window {
@@ -245,7 +249,7 @@ footer p {
     border: 3px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 30%;
+    width: 50%;
     line-height: 10px;
     margin-top: 3%;
     
@@ -256,7 +260,7 @@ footer p {
     border: 3px solid whitesmoke;
     margin: 1rem;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    width: 25%;
+    width: 50%;
     line-height: 10px;
     
 }
@@ -791,5 +795,8 @@ footer p {
         #modal-box {
             font-size: 85%;
         }
-
+        
+        .button-spacer {
+            margin-left: 5%;
+        }
     }    

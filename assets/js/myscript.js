@@ -58,7 +58,7 @@ function playBack() {
 }
 
 // Plays pop button sound when button is clicked //
-function playStart() {
+function playPop() {
   let sound = document.getElementById("start-btn");
   sound.play();
 }
@@ -417,7 +417,6 @@ function soundToggle() {
       sound.muted = false;
       localStorage.setItem("toggle", "ON");
       let sndToggleState = localStorage.getItem("toggle")
-      console.log("Sound =",sndToggleState);
     }
       
   } else {
@@ -428,8 +427,7 @@ function soundToggle() {
     for (const sound of sounds) {
     sound.muted = true;
     localStorage.setItem("toggle", "OFF");
-    sndToggleState = localStorage.getItem("toggle")
-    console.log("Sound =",sndToggleState)
+    sndToggleState = localStorage.getItem("toggle");
     }
   }
 }
