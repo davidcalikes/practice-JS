@@ -134,19 +134,22 @@ button i {
 }
 
 #animals-button {
-    background: orangered;
+    background-color:  orangered;
+    background-image: url(../images/carbon.png);
     color: #ffffff;
     cursor: pointer;
 }
 
 #shapes-button {
-    background: rgb(61, 226, 36);
+    background-color:  rgb(61, 226, 36);
+    background-image: url(../images/carbon.png);
     color: oldlace;
     cursor: pointer;
 }
 
 #colors-button {
-    background: rgb(133, 13, 193);
+    background-color: rgb(133, 13, 193);
+    background-image: url(../images/carbon.png);
     color: antiquewhite;
     cursor: pointer;
 }
