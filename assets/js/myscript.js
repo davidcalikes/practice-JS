@@ -313,7 +313,7 @@ function checkCard1 () {
 } else {
   if (testOnOff.innerHTML === "ON") {
     addAttempt();
-    runGame();
+    chkGame();
     tenCheck();
     playWrong();
 
@@ -349,7 +349,7 @@ function checkCard2 () {
 } else {
   if (testOnOff.innerHTML === "ON") {
     addAttempt();
-    runGame();
+    chkGame();
     tenCheck();
     playWrong();
   
@@ -384,7 +384,7 @@ function checkCard3 () {
   } else {
     if (testOnOff.innerHTML === "ON") {
       addAttempt();
-      runGame();
+      chkGame();
       tenCheck();
       playWrong();
   
@@ -420,7 +420,7 @@ function checkCard4 () {
   } else {
     if (testOnOff.innerHTML === "ON") {
       addAttempt();
-      runGame();
+      chkGame();
       tenCheck();
       playWrong();
   
@@ -445,7 +445,7 @@ function playAgain() {
   let congratsBox = document.getElementById("congrats-box").style.display = "none";
   congratsBox;
   hideHint();
-  runGame();
+  chkGame();
 }
 
 function playAgain2() {
@@ -517,6 +517,7 @@ function soundToggle() {
 }
 
 function testToggle() {
+  chkGame();
   let testOnOff = document.getElementById("test-on-off");
   if (testOnOff.innerHTML === "OFF") {
       testOnOff.innerHTML = "ON";
@@ -620,7 +621,7 @@ function chkGame() {
 
 }else{
   if (gameType === "Shapes"){
-  runGame2
+  runGame2();
 }
 }
 }
