@@ -89,8 +89,11 @@
                 <div class="q-box">
                     <audio id="q-sound" src="assets/audio/animals_btn.mp3"></audio>
                     <button id="question-button" onclick="qSound()"> <p id="question-txt"> Where is the animal?</p><i id="snd-btn-icon" class="fa-solid fa-volume-xmark"></i></button>
-                    <audio id="thumb-sound" src="assets/audio/thumb_cat.mp3"></audio>
-                    <img id="q-thumb" onclick="thumbSound()" src="assets/images/placeholder.jpeg" alt="A picture of a random farmyard animal">
+                    <div id="thumb-container">
+                        <audio id="thumb-sound" src="assets/audio/thumb_cat.mp3"></audio>
+                        <img id="q-thumb" onclick="thumbSound();thumbHint();" src="assets/images/placeholder.jpeg" alt="A picture of a random farmyard animal">
+                        <img id="thumb-hint" src="assets/audio/thumb_hint.png" alt="An image containing the text 'match me'">
+                    </div>
                 </div> 
                 
             </div>

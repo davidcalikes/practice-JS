@@ -437,8 +437,16 @@ footer p {
     border: 3px solid yellow;
 }
 
+#thumb-container{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
 #q-thumb{ 
-    
+    position: relative;
+    top: 0;
+    left: 0;
     border-radius: 10px;
     border: 3px solid whitesmoke;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -449,6 +457,17 @@ footer p {
 
 #q-thumb:hover{ 
     border: 3px solid yellow;
+}
+
+#thumb-hint {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: none;
+    margin-left: 3%;
+    width: 92.5px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 /* Modal style element that appears on correct answer and disappears on button click */

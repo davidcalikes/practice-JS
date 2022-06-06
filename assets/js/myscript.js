@@ -362,7 +362,8 @@ function playAgain() {
   
   let congratsBox = document.getElementById("congrats-box").style.display = "none";
   congratsBox;
-runGame();
+  hideHint();
+  runGame();
 }
 
 function startGame() {
@@ -472,3 +473,13 @@ function thumbSound() {
   thumbSound;
   thumbSound.play();
   }
+
+function thumbHint() {
+  const thumbHint = document.getElementById("thumb-hint").style.display = "flex";
+  thumbHint;
+}
+
+function hideHint() {
+  const hideHint = document.getElementById("thumb-hint").style.display = "none";
+  hideHint;
+}
