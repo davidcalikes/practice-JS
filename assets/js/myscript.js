@@ -169,22 +169,22 @@ function runGame() {
 }
 
 /** 
- * Contains all functions required to run the animals game a single game cycle.
+ * Contains all functions required to run the shapes game a single game cycle.
  * Including shuffling of Flashcards, creating a matching pair and congratulating the user for a correct answer.
  * Includes functions that provides the user audio and visual feedback.  
  * */
  function runGame2() {
 
   // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders.
-  let colours = ["assets/images/square.png","assets/images/circle.png","assets/images/oval.png","assets/images/star.png","assets/images/rectangle.png","assets/images/triangle.png"];
-  shuffle(colours);
+  let shapes = ["assets/images/square.png","assets/images/circle.png","assets/images/oval.png","assets/images/star.png","assets/images/rectangle.png","assets/images/triangle.png"];
+  shuffle(shapes);
 
-    document.getElementById("box-1").src = colours[0];
-    document.getElementById("box-2").src = colours[1];
-    document.getElementById("box-3").src = colours[2];
-    document.getElementById("box-4").src = colours[3];
+    document.getElementById("box-1").src = shapes[0];
+    document.getElementById("box-2").src = shapes[1];
+    document.getElementById("box-3").src = shapes[2];
+    document.getElementById("box-4").src = shapes[3];
 
-    let quizList = colours.slice(0,4);
+    let quizList = shapes.slice(0,4);
 
     document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
    
@@ -445,7 +445,7 @@ function playAgain() {
   let congratsBox = document.getElementById("congrats-box").style.display = "none";
   congratsBox;
   hideHint();
-  chkGame();
+  runGame();
 }
 
 function playAgain2() {
@@ -501,6 +501,7 @@ function soundToggle() {
       sound.muted = false;
       localStorage.setItem("toggle", "ON");
       let sndToggleState = localStorage.getItem("toggle")
+      sndToggleState;
     }
       
   } else {
@@ -617,11 +618,21 @@ function chkGame() {
   let gameType = document.getElementById("game-type").innerHTML
 
   if (gameType === "Animals") {
-  runGame();
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  console.log(gameType)
+  playAgain();
 
 }else{
-  if (gameType === "Shapes"){
-  runGame2();
+  if (gameType === "Shapes")
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  console.log(gameType)
+  playAgain2();
 }
 }
-}
+
