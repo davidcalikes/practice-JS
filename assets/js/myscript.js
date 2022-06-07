@@ -197,41 +197,41 @@ function runGame() {
     let question = document.getElementById("question-txt").innerHTML;
     question;
 
-        if (quizPic === "assets/images/test.png") {
+        if (quizPic === "assets/images/triangle.png") {
           document.getElementById("question-txt").innerHTML = "Where is the triangle?";
-          document.getElementById("q-sound").src = "assets/audio/q_sheep.mp3";
-          document.getElementById("thumb-sound").src = "assets/audio/thumb_sheep.mp3";
+          document.getElementById("q-sound").src = "assets/audio/q_triangle.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_triangle.mp3";
         
          } else {
 
         if (quizPic === "assets/images/circle.png") {
          document.getElementById("question-txt").innerHTML = "Where is the circle ?";
-         document.getElementById("q-sound").src = "assets/audio/q_duck.mp3";
-         document.getElementById("thumb-sound").src = "assets/audio/thumb_duck.mp3";
+         document.getElementById("q-sound").src = "assets/audio/q_circle.mp3";
+         document.getElementById("thumb-sound").src = "assets/audio/thumb_circle.mp3";
        } else {
 
          if (quizPic === "assets/images/square.png") {
           document.getElementById("question-txt").innerHTML = "Where is the square?";
-          document.getElementById("q-sound").src = "assets/audio/q_horse.mp3";
-          document.getElementById("thumb-sound").src = "assets/audio/thumb_horse.mp3";
+          document.getElementById("q-sound").src = "assets/audio/q_square.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_square.mp3";
          } else {
 
            if (quizPic === "assets/images/oval.png") {
             document.getElementById("question-txt").innerHTML = "Where is the oval?";
-            document.getElementById("q-sound").src = "assets/audio/q_pig.mp3";
-            document.getElementById("thumb-sound").src = "assets/audio/thumb_pig.mp3";
+            document.getElementById("q-sound").src = "assets/audio/q_oval.mp3";
+            document.getElementById("thumb-sound").src = "assets/audio/thumb_oval.mp3";
          } else {
 
              if (quizPic === "assets/images/rectangle.png") {
               document.getElementById("question-txt").innerHTML = "Where is the rectangle?";
-              document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
-              document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
+              document.getElementById("q-sound").src = "assets/audio/q_rectangle.mp3";
+              document.getElementById("thumb-sound").src = "assets/audio/thumb_rectangle.mp3";
          } else {
 
                if (quizPic === "assets/images/star.png") {
                 document.getElementById("question-txt").innerHTML = "Where is the star?";     
-                document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
-                document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
+                document.getElementById("q-sound").src = "assets/audio/q_star.mp3";
+                document.getElementById("thumb-sound").src = "assets/audio/thumb_star.mp3";
                } else {
                    
              }
