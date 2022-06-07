@@ -244,6 +244,95 @@ function runGame() {
        makeMatch();
 }
 
+/** 
+ * Contains all functions required to run the colours game a single game cycle.
+ * Including shuffling of Flashcards, creating a matching pair and congratulating the user for a correct answer.
+ * Includes functions that provides the user audio and visual feedback.  
+ * */
+ function runGame3() {
+
+  // Applies shuffle algorithm to animals array & pushes first four elements to the game area placeholeders.
+  let colours = ["assets/images/red.png","assets/images/pink.png","assets/images/orange.png","assets/images/yellow.png","assets/images/green.png","assets/images/blue.png","assets/images/purple.png","assets/images/black.png"];
+  shuffle(colours);
+
+    document.getElementById("box-1").src = colours[0];
+    document.getElementById("box-2").src = colours[1];
+    document.getElementById("box-3").src = colours[2];
+    document.getElementById("box-4").src = colours[3];
+
+    let quizList = colours.slice(0,4);
+
+    document.getElementById("q-thumb").src = quizList[Math.floor(Math.random()* quizList.length)];
+   
+   let quizPic = document.getElementById("q-thumb").getAttribute('src');
+   console.log(quizPic);
+
+   // Uses quizzPic variable to duplicate image to floating congratsBox element"
+   document.getElementById("float-pic").src = quizPic;
+   
+    let question = document.getElementById("question-txt").innerHTML;
+    question;
+
+        if (quizPic === "assets/images/red.png") {
+          document.getElementById("question-txt").innerHTML = "Where is the color red?";
+          document.getElementById("q-sound").src = "assets/audio/q_sheep.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_sheep.mp3";
+        
+         } else {
+
+        if (quizPic === "assets/images/pink.png") {
+         document.getElementById("question-txt").innerHTML = "Where is the colour pink ?";
+         document.getElementById("q-sound").src = "assets/audio/q_duck.mp3";
+         document.getElementById("thumb-sound").src = "assets/audio/thumb_duck.mp3";
+       } else {
+
+         if (quizPic === "assets/images/orange.png") {
+          document.getElementById("question-txt").innerHTML = "Where is the colour orange?";
+          document.getElementById("q-sound").src = "assets/audio/q_horse.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_horse.mp3";
+         } else {
+
+           if (quizPic === "assets/images/yellow.png") {
+            document.getElementById("question-txt").innerHTML = "Where is the colour yellow?";
+            document.getElementById("q-sound").src = "assets/audio/q_pig.mp3";
+            document.getElementById("thumb-sound").src = "assets/audio/thumb_pig.mp3";
+         } else {
+
+             if (quizPic === "assets/images/green.png") {
+              document.getElementById("question-txt").innerHTML = "Where is the color green?";
+              document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
+              document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
+         } else {
+
+               if (quizPic === "assets/images/blue.png") {
+                document.getElementById("question-txt").innerHTML = "Where is the colour blue?";     
+                document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
+                document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
+               } else {
+
+                if (quizPic === "assets/images/purple.png") {
+                  document.getElementById("question-txt").innerHTML = "Where is the color purple?";
+                  document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
+                  document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
+             } else {
+    
+                   if (quizPic === "assets/images/black.png") {
+                    document.getElementById("question-txt").innerHTML = "Where is the colour black?";     
+                    document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
+                    document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
+                   } else {
+                }      
+              }
+             }
+          }
+        }
+      }
+    }
+   }
+
+       makeMatch();
+}
+
 // Creates active flash card that matches thumbnail image and waits for user interaction.       
 function makeMatch() {
       
@@ -463,6 +552,21 @@ function playAgain2() {
   runGame2();
 }
 
+function playAgain3() {
+
+  tenCheck();
+
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  
+  let congratsBox = document.getElementById("congrats-box").style.display = "none";
+  congratsBox;
+  hideHint();
+  runGame3();
+}
+
 function startGame() {
   
   document.getElementById("box-1").className = "box";
@@ -485,6 +589,18 @@ function startGame2() {
   let modal = document.getElementById("modal-box").style.display = "none";
   modal;
 runGame2();
+}
+
+function startGame3() {
+  
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  
+  let modal = document.getElementById("modal-box").style.display = "none";
+  modal;
+runGame3();
 }
 
 function soundToggle() {
@@ -626,13 +742,24 @@ function chkGame() {
   playAgain();
 
 }else{
-  if (gameType === "Shapes")
+  if (gameType === "Shapes"){
   document.getElementById("box-1").className = "box";
   document.getElementById("box-2").className = "box";
   document.getElementById("box-3").className = "box";
   document.getElementById("box-4").className = "box";
   console.log(gameType)
   playAgain2();
+
+}else{
+  if (gameType === "Colours")
+  document.getElementById("box-1").className = "box";
+  document.getElementById("box-2").className = "box";
+  document.getElementById("box-3").className = "box";
+  document.getElementById("box-4").className = "box";
+  console.log(gameType)
+  playAgain3();
 }
 }
+}
+
 
