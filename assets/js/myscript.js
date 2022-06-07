@@ -275,51 +275,51 @@ function runGame() {
 
         if (quizPic === "assets/images/red.png") {
           document.getElementById("question-txt").innerHTML = "Where is the color red?";
-          document.getElementById("q-sound").src = "assets/audio/q_sheep.mp3";
-          document.getElementById("thumb-sound").src = "assets/audio/thumb_sheep.mp3";
+          document.getElementById("q-sound").src = "assets/audio/q_red.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_red.mp3";
         
          } else {
 
         if (quizPic === "assets/images/pink.png") {
          document.getElementById("question-txt").innerHTML = "Where is the colour pink ?";
-         document.getElementById("q-sound").src = "assets/audio/q_duck.mp3";
-         document.getElementById("thumb-sound").src = "assets/audio/thumb_duck.mp3";
+         document.getElementById("q-sound").src = "assets/audio/q_pink.mp3";
+         document.getElementById("thumb-sound").src = "assets/audio/thumb_pink.mp3";
        } else {
 
          if (quizPic === "assets/images/orange.png") {
           document.getElementById("question-txt").innerHTML = "Where is the colour orange?";
-          document.getElementById("q-sound").src = "assets/audio/q_horse.mp3";
-          document.getElementById("thumb-sound").src = "assets/audio/thumb_horse.mp3";
+          document.getElementById("q-sound").src = "assets/audio/q_orange.mp3";
+          document.getElementById("thumb-sound").src = "assets/audio/thumb_orange.mp3";
          } else {
 
            if (quizPic === "assets/images/yellow.png") {
             document.getElementById("question-txt").innerHTML = "Where is the colour yellow?";
-            document.getElementById("q-sound").src = "assets/audio/q_pig.mp3";
-            document.getElementById("thumb-sound").src = "assets/audio/thumb_pig.mp3";
+            document.getElementById("q-sound").src = "assets/audio/q_yellow.mp3";
+            document.getElementById("thumb-sound").src = "assets/audio/thumb_yellow.mp3";
          } else {
 
              if (quizPic === "assets/images/green.png") {
               document.getElementById("question-txt").innerHTML = "Where is the color green?";
-              document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
-              document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
+              document.getElementById("q-sound").src = "assets/audio/q_green.mp3";
+              document.getElementById("thumb-sound").src = "assets/audio/thumb_green.mp3";
          } else {
 
                if (quizPic === "assets/images/blue.png") {
                 document.getElementById("question-txt").innerHTML = "Where is the colour blue?";     
-                document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
-                document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
+                document.getElementById("q-sound").src = "assets/audio/q_blue.mp3";
+                document.getElementById("thumb-sound").src = "assets/audio/thumb_blue.mp3";
                } else {
 
                 if (quizPic === "assets/images/purple.png") {
                   document.getElementById("question-txt").innerHTML = "Where is the color purple?";
-                  document.getElementById("q-sound").src = "assets/audio/q_rooster.mp3";
-                  document.getElementById("thumb-sound").src = "assets/audio/thumb_rooster.mp3";
+                  document.getElementById("q-sound").src = "assets/audio/q_purple.mp3";
+                  document.getElementById("thumb-sound").src = "assets/audio/thumb_purple.mp3";
              } else {
     
                    if (quizPic === "assets/images/black.png") {
                     document.getElementById("question-txt").innerHTML = "Where is the colour black?";     
-                    document.getElementById("q-sound").src = "assets/audio/q_cat.mp3";
-                    document.getElementById("thumb-sound").src = "assets/audio/thumb_cat.mp3";
+                    document.getElementById("q-sound").src = "assets/audio/q_black.mp3";
+                    document.getElementById("thumb-sound").src = "assets/audio/thumb_black.mp3";
                    } else {
                 }      
               }
