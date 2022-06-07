@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Schoolbell&family=Short+Stack&display=swap');
 
 /* *** GENERAL STYLE RULES *** */
-
 * {
     margin: 0;
     padding: 0;
@@ -758,6 +757,9 @@ footer p {
             font-size: 70%;
         }
 
+        #thumb-hint {
+            width: 62.5px;
+        }
     }
 
     @media screen and (max-width: 400px) {
@@ -783,7 +785,7 @@ footer p {
             width: 50px;
         }
 
-        #thumb-hunt {
+        #thumb-hint {
             width: 50px;
         }
 
