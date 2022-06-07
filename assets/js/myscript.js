@@ -634,11 +634,12 @@ function soundToggle() {
 }
 
 function testToggle() {
-  chkGame();
+  
   let testOnOff = document.getElementById("test-on-off");
   if (testOnOff.innerHTML === "OFF") {
       testOnOff.innerHTML = "ON";
       console.log("Test Mode Activated")
+      chkGame();
       runTest();
   } else {
     testOnOff.innerHTML = "OFF";
@@ -742,7 +743,7 @@ function chkGame() {
   playAgain();
 
 }else{
-  if (gameType === "Shapes"){
+  if (gameType === "Shapes") {
   document.getElementById("box-1").className = "box";
   document.getElementById("box-2").className = "box";
   document.getElementById("box-3").className = "box";
@@ -751,13 +752,14 @@ function chkGame() {
   playAgain2();
 
 }else{
-  if (gameType === "Colours")
+  if (gameType === "Colours") {
   document.getElementById("box-1").className = "box";
   document.getElementById("box-2").className = "box";
   document.getElementById("box-3").className = "box";
   document.getElementById("box-4").className = "box";
   console.log(gameType)
   playAgain3();
+}
 }
 }
 }
